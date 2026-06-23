@@ -1,0 +1,7767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0D47A1">
+<meta name="color-scheme" content="light">
+<title>Dr. Amrita's Dentacare</title>
+
+<link rel="canonical" href="https://dramritasdentacare.com/">
+
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<meta name="description" content="Dr. Amrita's Dentacare - Advanced dental clinic in Mira Road providing Root Canal Treatment, Implants, Braces, Aligners, Teeth Whitening and Family Dental Care.">
+
+<meta name="keywords" content="Dentist Mira Road, Dental Clinic Mira Road, Root Canal Treatment Mira Road, Dental Implants Mira Road, Teeth Whitening Mira Road">
+
+<meta name="author" content="Dr. Amrita's Dentacare">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Dr. Amrita's Dentacare">
+
+<meta property="og:description" content="Advanced Dental Care in Mira Road">
+
+<meta property="og:image" content="https://dramritasdentacare.com/images/logo.png">
+
+<meta property="og:url" content="https://dramritasdentacare.com">
+
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f4ee;
+color:#222;
+overflow-x:hidden;
+cursor:default;
+}
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+#loader img{
+width:120px;
+margin-bottom:20px;
+}
+
+#loader p{
+font-size:22px;
+color:#16325b;
+font-weight:600;
+}
+
+#loader img{
+animation:zoomLogo 1.5s infinite alternate;
+}
+
+#loader p{
+animation:blinkText 1.2s infinite;
+}
+
+.loader-ring{
+width:45px;
+height:45px;
+border:4px solid #f3e5b5;
+border-top:4px solid #c6a769;
+border-radius:50%;
+margin-bottom:20px;
+animation:spinRing 1s linear infinite;
+}
+
+@keyframes zoomLogo{
+from{
+transform:scale(1);
+}
+to{
+transform:scale(1.1);
+}
+}
+
+@keyframes blinkText{
+0%{
+opacity:1;
+}
+50%{
+opacity:0.5;
+}
+100%{
+opacity:1;
+}
+}
+
+@keyframes spinRing{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+
+}
+
+@keyframes floatCard{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-6px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+a{
+text-decoration:none;
+color:inherit;
+transition:0.3s ease;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,0.72);
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+padding:10px 0;
+z-index:999;
+box-shadow:
+0 8px 30px rgba(0,0,0,0.06),
+0 2px 10px rgba(255,255,255,0.4);
+border-bottom:1px solid rgba(255,255,255,0.25);
+transition:0.4s ease;
+}
+
+
+.nav-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand-text{
+display:flex;
+flex-direction:column;
+margin-left:-22px;
+}
+
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-wrap img{
+width:140px;
+height:auto;
+filter:none;
+display:block;
+}
+
+.brand-text h1{
+font-family:'Montserrat',sans-serif;
+font-size:30px;
+font-weight:800;
+color:#0d2b5c;
+margin:0;
+letter-spacing:0;
+line-height:1.1;
+margin-bottom:12px;
+white-space:nowrap;
+}
+
+.brand-text p{
+font-family:"Brush Script MT", cursive;
+font-size:25px;
+font-weight:normal;
+color:#0d2b5c;
+margin-top:-5px;
+margin-left:140px;
+text-align:center;
+line-height:1;
+}
+.menu-toggle{
+display:none;
+font-size:32px;
+cursor:pointer;
+color:#16325b;
+font-weight:700;
+}
+nav ul{
+display:flex;
+list-style:none;
+gap:15px;
+}
+
+nav ul li a{
+font-size:17px;
+font-weight:600;
+color:#16325b;
+transition:0.35s ease;
+}
+
+nav ul li a:hover{
+color:#c6a769;
+transform:translateY(-2px);
+text-shadow:0 5px 18px rgba(198,167,105,0.3);
+}
+
+.btn{
+padding:14px 28px;
+border-radius:40px;
+font-size:14px;
+font-weight:600;
+display:inline-block;
+transition:all 0.35s cubic-bezier(0.22,1,0.36,1);
+will-change:transform;
+}
+
+.btn-gold{
+background:linear-gradient(135deg,#c6a769,#f7d774);
+color:white;
+position:relative;
+overflow:hidden;
+z-index:1;
+}
+
+.btn-gold:hover{
+transform:translateY(-4px) scale(1.03);
+box-shadow:
+0 18px 40px rgba(198,167,105,0.35),
+0 8px 20px rgba(22,50,91,0.15);
+}
+
+.btn-gold::before{
+content:'';
+position:absolute;
+top:0;
+left:-120%;
+width:100%;
+height:100%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,0.45),
+transparent
+);
+transition:0.8s;
+z-index:-1;
+}
+
+.btn-gold:hover::before{
+left:120%;
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+background:transparent;
+}
+
+.btn-outline:hover{
+background:white;
+color:#16325b;
+}
+
+.premium-hero{
+position:relative;
+min-height:100svh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+padding-top:95px;
+}
+
+.hero-bg-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:1;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+to bottom,
+rgba(15,28,46,0.45),
+rgba(22,50,91,0.48)
+);
+z-index:2;
+}
+
+.hero-content{
+position:relative;
+z-index:3;
+text-align:center;
+color:white;
+padding:20px;
+width:100%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero-content h1{
+font-family:'Montserrat',sans-serif;
+font-size:72px;
+font-weight:800;
+letter-spacing:2px;
+margin-bottom:20px;
+
+background:linear-gradient(
+90deg,
+#ffffff,
+#f7d774,
+#ffffff
+);
+
+background-size:200% auto;
+
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+color:transparent;
+
+text-shadow:0 10px 35px rgba(255,255,255,0.15);
+
+animation:shineText 5s linear infinite;
+}
+
+.hero-content p{
+font-size:24px;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:35px;
+font-style:italic;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.section{
+padding:130px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-title h2{
+font-size:42px;
+line-height:1.2;
+color:#16325b;
+margin-bottom:15px;
+}
+
+.faq-section .section-title h2{
+font-size:52px;
+color:#16325b;
+}
+
+.faq-section .section-title p{
+font-size:18px;
+color:#5f6f82;
+max-width:700px;
+margin:auto;
+}
+
+.section-title p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#666;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:30px;
+align-items:center;
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.about-img img{
+border-radius:30px;
+height:100%;
+object-fit:cover;
+box-shadow:0 20px 50px rgba(0,0,0,0.1);
+}
+
+.about-text h3{
+font-size:42px;
+color:#16325b;
+margin-bottom:20px;
+}
+
+.about-text p{
+line-height:1.9;
+color:#555;
+margin-bottom:20px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:40px;
+}
+
+.why-card{
+background:#FCFCFA;
+padding:30px 20px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.why-card img{
+width:90px;
+height:90px;
+margin:0 auto 20px;
+object-fit:contain;
+}
+
+.why-card h4{
+font-size:20px;
+color:#16325b;
+margin-bottom:12px;
+}
+
+.why-card p{
+font-size:15px;
+line-height:1.8;
+color:#555;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+align-items:stretch;
+}
+
+.service-card{
+background:rgba(255,255,255,0.92);
+backdrop-filter:blur(14px);
+padding:35px 28px;
+border-radius:28px;
+height:100%;
+display:flex;
+flex-direction:column;
+box-shadow:
+0 15px 40px rgba(0,0,0,0.08),
+0 5px 18px rgba(22,50,91,0.05);
+transition:0.45s ease;
+border-top:5px solid #c6a769;
+animation:floatCard 5s ease-in-out infinite;
+position:relative;
+overflow:hidden;
+}
+
+.service-card:hover{
+transform:translateY(-14px) scale(1.03);
+box-shadow:
+0 30px 70px rgba(22,50,91,0.18),
+0 10px 30px rgba(198,167,105,0.12);
+}
+
+.service-card::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.35),
+transparent
+);
+transition:0.8s;
+}
+
+.service-card:hover::before{
+left:100%;
+}
+
+.service-icon{
+font-size:38px;
+margin-bottom:18px;
+}
+
+.service-image{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:22px;
+margin-bottom:20px;
+display:block;
+}
+.service-card:hover .service-image{
+transform:scale(1.05);
+}
+
+.service-image{
+transition:.5s ease;
+}
+
+.service-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+border-radius:30px;
+background:linear-gradient(135deg,#c6a769,#f7d774);
+color:white;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+}
+
+.service-card h3{
+font-size:22px;
+color:#16325b;
+margin-bottom:14px;
+min-height:60px;
+}
+
+.service-card p{
+line-height:1.8;
+color:#666;
+font-size:17px;
+min-height:85px;
+font-weight:500;
+}
+
+.read-more{
+display:inline-block;
+margin-top:auto;
+padding-top:18px;
+font-size:15px;
+font-weight:600;
+color:#c6a769;
+transition:.3s ease;
+}
+
+.service-card:hover .read-more{
+transform:translateX(6px);
+}
+
+.service-card{
+cursor:pointer;
+}
+
+.gallery{
+background:#F3EEE6;
+}
+.before-after{
+background:#ffffff;
+}
+
+.slider-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.comparison-container{
+position:relative;
+width:100%;
+height:380px;
+overflow:hidden;
+border-radius:30px;
+box-shadow:0 20px 60px rgba(0,0,0,.12);
+background:#fff;
+cursor:ew-resize;
+}
+
+.img-wrapper,
+.overlay-img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+.img-wrapper img,
+.overlay-img img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+object-position: 24% center;
+user-select:none;
+pointer-events:none;
+}
+
+.overlay-img{
+width:50%;
+}
+
+.slider-line{
+position:absolute;
+top:0;
+left:50%;
+width:4px;
+height:100%;
+background:#fff;
+transform:translateX(-50%);
+z-index:5;
+}
+
+.slider-handle{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:70px;
+height:70px;
+border-radius:50%;
+background:#16325b;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+z-index:6;
+}
+
+@media(max-width:768px){
+
+.slider-row{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.comparison-container{
+height:360px;
+max-width:700px;
+margin:auto;
+}
+
+.slider-handle{
+width:55px;
+height:55px;
+font-size:22px;
+}
+
+}
+.img-wrapper{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+.label-before,
+.label-after{
+position:absolute;
+top:18px;
+padding:12px 24px;
+background:rgba(70,35,35,.75);
+color:#fff;
+font-size:16px;
+font-weight:700;
+border-radius:40px;
+z-index:100;
+}
+
+.label-before{
+left:20px;
+}
+
+.label-after{
+right:20px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.gallery-grid img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.premium-gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+}
+
+.gallery-card{
+position:relative;
+overflow:hidden;
+border-radius:32px;
+height:320px;
+box-shadow:0 20px 55px rgba(0,0,0,0.12);
+}
+
+.gallery-card.large{
+height:320px;
+}
+
+.gallery-card.wide{
+height:320px;
+}
+
+.gallery-card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.8s cubic-bezier(0.22,1,0.36,1);
+}
+
+.gallery-overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:28px;
+
+background:linear-gradient(
+to top,
+rgba(0,0,0,0.82),
+rgba(0,0,0,0.18),
+transparent
+);
+
+color:white;
+
+
+transition:0.4s ease;
+}
+
+.gallery-overlay h3{
+font-size:22px;
+font-weight:600;
+}
+
+.gallery-card:hover .gallery-overlay{
+padding-bottom:38px;
+}
+
+.gallery-card:hover img{
+transform:scale(1.12);
+}
+
+.gallery-card:active img{
+transform:scale(1.12);
+}
+@media(max-width:991px){
+
+.premium-gallery-grid{
+grid-template-columns:1fr;
+}
+
+.gallery-card,
+.gallery-card.large,
+.gallery-card.wide{
+height:300px;
+grid-column:unset;
+grid-row:unset;
+}
+
+.gallery-overlay h3{
+font-size:18px;
+}
+
+.premium-gallery-grid{
+gap:20px;
+}
+
+.gallery-card{
+border-radius:26px;
+}
+
+.gallery-overlay{
+padding:20px;
+}
+
+}
+
+/* =====================================
+   PREMIUM TESTIMONIAL CAROUSEL
+===================================== */
+
+.testimonials{
+    background:#f7f9fc;
+    padding:120px 0;
+}
+
+.testimonial-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    position:relative;
+}
+
+.testimonial-carousel{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+
+.testimonial-card{
+
+display:none;
+
+position:relative;
+overflow:hidden;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:
+transform .75s cubic-bezier(.22,1,.36,1),
+opacity .75s ease,
+width .75s cubic-bezier(.22,1,.36,1),
+height .75s cubic-bezier(.22,1,.36,1),
+box-shadow .75s ease,
+border .45s ease;
+
+box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+will-change:transform;
+
+}
+
+.testimonial-card.left,
+.testimonial-card.active,
+.testimonial-card.right{
+
+display:block;
+
+}
+
+.testimonial-card video{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+.mute-floating{
+
+position:absolute;
+
+bottom:25px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+background:rgba(22,50,91,.82);
+
+backdrop-filter:blur(10px);
+
+color:#fff;
+
+font-size:26px;
+
+cursor:pointer;
+
+z-index:500;
+
+transition:.3s;
+
+opacity:0;
+
+pointer-events:none;
+
+}
+
+.mute-floating.show{
+
+opacity:1;
+
+pointer-events:auto;
+
+}
+
+.mute-floating:hover{
+
+background:#c6a769;
+
+}
+
+/* LEFT */
+
+.testimonial-card.left{
+
+    width:140px;
+    height:260px;
+
+    opacity:.45;
+
+    transform:scale(.82);
+    z-index:2;
+
+}
+
+/* CENTER */
+
+.testimonial-card.active{
+
+    width:310px;
+    height:428px;
+
+    transform:scale(1);
+    z-index:10;
+    opacity:1;
+
+    border:6px solid #c6a769;
+
+    box-shadow:
+    0 30px 80px rgba(22,50,91,.18),
+    0 0 40px rgba(198,167,105,.28);
+
+}
+
+/* RIGHT */
+
+.testimonial-card.right{
+
+    width:140px;
+    height:260px;
+
+    opacity:.45;
+
+    transform:scale(.82);
+    z-index:2;
+
+}
+
+/* BUTTONS */
+
+.carousel-btn{
+
+width:68px;
+height:68px;
+
+border-radius:50%;
+
+border:1px solid rgba(255,255,255,.35);
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+color:#16325B;
+
+font-size:28px;
+
+font-weight:700;
+
+cursor:pointer;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+transition:.35s cubic-bezier(.22,1,.36,1);
+
+box-shadow:
+0 12px 35px rgba(22,50,91,.12),
+0 6px 18px rgba(255,255,255,.35);
+
+flex-shrink:0;
+
+}
+
+.carousel-btn:hover{
+
+background:rgba(198,167,105,.92);
+
+color:white;
+
+transform:translateY(-4px) scale(1.08);
+
+box-shadow:
+0 20px 45px rgba(198,167,105,.35),
+0 10px 25px rgba(22,50,91,.18);
+
+}
+
+@media(max-width:991px){
+
+.testimonial-wrapper{
+
+gap:12px;
+
+}
+
+.testimonial-carousel{
+
+gap:12px;
+
+}
+
+.testimonial-card.active{
+
+width:280px;
+
+height:470px;
+
+}
+
+.testimonial-card.left,
+.testimonial-card.right{
+
+width:70px;
+
+height:130px;
+
+}
+
+.carousel-btn{
+
+width:48px;
+
+height:48px;
+
+font-size:22px;
+
+}
+
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.contact-box{
+background:rgba(255,255,255,0.92);
+backdrop-filter:blur(18px);
+padding:50px;
+border-radius:35px;
+box-shadow:
+0 25px 70px rgba(22,50,91,0.12),
+0 8px 25px rgba(198,167,105,0.08);
+border:1px solid rgba(255,255,255,0.7);
+}
+
+.contact-box h3{
+font-size:38px;
+color:#16325b;
+margin-bottom:25px;
+}
+
+.contact-box p{
+margin-bottom:18px;
+line-height:1.8;
+color:#555;
+}
+.map iframe{
+width:100%;
+height:500px;
+border:0;
+border-radius:35px;
+box-shadow:0 20px 55px rgba(0,0,0,0.12);
+}
+
+.sticky-book{
+position:fixed;
+left:15px;
+right:85px;
+top:auto;
+bottom:15px;
+transform:none;
+text-align:center;
+padding:14px;
+font-size:14px;
+border-radius:16px;
+background:linear-gradient(135deg,#16325b,#c6a769);
+color:white;
+font-weight:600;
+z-index:999;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.sticky-book:hover{
+transform:translateY(-50%) scale(1.05);
+}
+
+@media(max-width:991px){
+
+.sticky-book{
+left:15px;
+right:15px;
+top:auto;
+bottom:15px;
+transform:none;
+text-align:center;
+padding:16px;
+font-size:16px;
+border-radius:18px;
+}
+
+.whatsapp{
+bottom:18px;
+right:15px;
+width:58px;
+height:58px;
+}
+
+.whatsapp img{
+width:28px;
+height:28px;
+}
+}
+#scrollTopBtn{
+position:fixed;
+bottom:105px;
+right:25px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#16325b;
+color:white;
+font-size:28px;
+cursor:pointer;
+display:none;
+z-index:999;
+}
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+z-index:999;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+.whatsapp img{
+width:32px;
+height:32px;
+}
+
+.premium-footer{
+background:linear-gradient(135deg,#122033,#1F3B63);
+color:white;
+padding:100px 0 30px;
+position:relative;
+overflow:hidden;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.2fr 1.1fr 1.1fr 1fr;
+gap:40px;
+margin-bottom:50px;
+}
+
+.footer-col h3{
+font-family:'Montserrat',sans-serif !important;
+font-size:36px;
+font-weight:800 !important;
+line-height:1.15;
+letter-spacing:0;
+color:white;
+margin-bottom:20px;
+}
+
+.footer-col h4{
+font-family:'Montserrat',sans-serif;
+font-size:22px;
+font-weight:800;
+margin-bottom:18px;
+color:#f7d774;
+}
+
+.footer-col h4::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-6px;
+width:40px;
+height:3px;
+background:linear-gradient(90deg,#c6a769,#f7d774);
+border-radius:10px;
+}
+
+.footer-col p,
+.footer-col a{
+display:block;
+color:#e7eef8;
+line-height:1.9;
+font-size:15px;
+margin-bottom:10px;
+transition:0.3s;
+}
+
+.footer-col a:hover{
+transform:translateX(5px);
+color:#f7d774;
+}
+
+.footer-social{
+display:flex !important;
+align-items:center !important;
+gap:10px;
+margin-bottom:15px;
+justify-content:flex-start;
+margin-left:0;
+margin-right:0;
+width:auto;
+}
+
+.footer-social img{
+width:24px;
+height:24px;
+display:inline-block;
+vertical-align:middle;
+}
+
+.footer-feature{
+margin-bottom:12px;
+font-size:15px;
+color:#e7eef8;
+}
+
+.footer-feature:hover{
+color:#f7d774;
+}
+
+.footer-bottom{
+border-top:1px solid rgba(255,255,255,0.15);
+padding-top:20px;
+text-align:center;
+font-size:14px;
+color:#dbe7f5;
+}
+
+.expertise-list{
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-top:10px;
+}
+
+.expertise-item{
+display:block;
+color:#e7eef8;
+font-size:15px;
+margin-bottom:12px;
+transition:.3s ease;
+}
+
+.expertise-item:hover{
+color:#f7d774;
+padding-left:5px;
+}
+
+.counter-section{
+padding:90px 0;
+background:#FCFCFA;
+}
+
+.counter-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+text-align:center;
+}
+
+.counter-box{
+background:linear-gradient(145deg,#ffffff,#f2f8ff);
+padding:45px 20px;
+border-radius:32px;
+box-shadow:
+0 18px 45px rgba(0,0,0,0.08),
+0 6px 18px rgba(22,50,91,0.05);
+transition:0.45s ease;
+border:1px solid rgba(22,50,91,0.06);
+position:relative;
+overflow:hidden;
+}
+
+.counter-box:hover{
+transform:translateY(-12px) scale(1.03);
+
+box-shadow:
+0 30px 70px rgba(22,50,91,0.15),
+0 10px 25px rgba(198,167,105,0.12);
+}
+.counter-box::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.4),
+transparent
+);
+
+transition:0.8s;
+}
+
+.counter-box:hover::before{
+left:100%;
+}
+
+.counter-icon{
+font-size:42px;
+margin-bottom:18px;
+}
+
+.counter-box h2{
+font-size:54px;
+color:#16325b;
+margin-bottom:10px;
+font-weight:700;
+}
+
+.counter-box p{
+font-size:18px;
+color:#555;
+}
+
+.mobile-call{
+display:none;
+}
+
+.desktop-call{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+white-space:nowrap;
+margin-left:20px;
+padding:10px 24px;
+min-width:140px;
+border-radius:40px;
+font-size:14px;
+font-weight:600;
+}
+
+@media(max-width:991px){
+
+.desktop-call{
+display:none;
+}
+
+.menu-toggle{
+display:block;
+position:absolute;
+right:15px;
+top:50%;
+transform:translateY(-50%);
+font-size:40px;
+margin:0;
+}
+
+.mobile-call{
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:absolute;
+right:65px;
+top:30%;
+transform:translateY(-50%);
+
+width:42px;
+height:42px;
+padding:0;
+
+border-radius:50%;
+
+font-size:22px;
+font-weight:700;
+
+z-index:1001;
+}
+
+nav{
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+
+background:rgba(255,255,255,0.78);
+
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+
+box-shadow:
+0 18px 45px rgba(0,0,0,0.08),
+0 8px 20px rgba(22,50,91,0.06);
+
+padding:28px 0;
+
+border-bottom-left-radius:28px;
+border-bottom-right-radius:28px;
+
+opacity:0;
+visibility:hidden;
+transform:translateY(-15px) scale(0.98);
+
+transition:
+opacity 0.35s ease,
+transform 0.35s ease,
+visibility 0.35s;
+}
+
+nav.active{
+opacity:1;
+visibility:visible;
+transform:translateY(0) scale(1);
+}
+
+nav ul{
+flex-direction:column;
+align-items:center;
+gap:26px;
+}
+
+.about-grid,
+.services-grid,
+.gallery-grid,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.highlight-box{
+grid-template-columns:1fr;
+}
+
+.brand-text h1{
+font-size:22px;
+}
+
+.brand-text p{
+font-family:"Brush Script MT", cursive;
+font-size:17px;
+line-height:1;
+margin-top:2px;
+margin-left:55px;
+text-align:left;
+}
+
+.nav-wrap{
+display:flex;
+align-items:center;
+position:relative;
+}
+
+.logo-wrap img{
+width:65px;
+}
+
+.brand-text h1{
+font-size:17px;
+line-height:1.1;
+margin-bottom:6px;
+}
+
+.brand-text{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.btn{
+padding:10px 16px;
+font-size:12px;
+}
+
+.service-card{
+padding:28px 22px;
+border-radius:24px;
+}
+
+.service-card h3{
+font-size:20px;
+}
+
+.service-card p{
+font-size:16px;
+line-height:1.8;
+font-weight:500;
+}
+
+.hero-content h1{
+font-size:42px;
+line-height:1.1;
+letter-spacing:1px;
+margin-top:20px;
+}
+
+.hero-content p{
+font-size:20px;
+padding:0 24px;
+line-height:1.5;
+margin-top:10px;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+gap:12px;
+}
+
+.premium-hero{
+min-height:100svh;
+padding-top:90px;
+}
+.counter-grid{
+grid-template-columns:1fr 1fr;
+gap:24px;
+}
+
+.counter-box{
+padding:38px 18px;
+border-radius:28px;
+}
+.faq-question{
+font-size:16px;
+padding:22px 20px;
+}
+
+.faq-question span{
+font-size:26px;
+}
+
+.faq-answer p{
+padding:0 20px 22px;
+font-size:14px;
+line-height:1.8;
+}
+.faq-section .section-title h2{
+font-size:34px;
+line-height:1.2;
+}
+
+.faq-section .section-title p{
+font-size:15px;
+padding:0 10px;
+}
+
+.faq-section .section-title{
+margin-bottom:45px;
+}
+
+.faq-item:hover{
+transform:none;
+box-shadow:
+0 20px 55px rgba(22,50,91,0.08),
+0 8px 22px rgba(198,167,105,0.05);
+}
+
+.doctor-grid{
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+gap:30px !important;
+width:100% !important;
+}
+
+.doctor-image{
+width:100%;
+display:block;
+}
+
+.doctor-image img{
+width:90% !important;
+max-width:none !important;
+height:500px !important;
+object-fit:cover !important;
+margin:auto !important;
+border-radius:30px;
+}
+
+.doctor-info h2{
+font-size:26px;
+line-height:1.2;
+text-align:center;
+}
+
+.doctor-subtitle{
+font-size:15px;
+text-align:center;
+line-height:1.5;
+}
+
+.doctor-info p{
+text-align:center;
+font-size:15px;
+line-height:1.8;
+}
+
+.doctor-badges{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.doctor-badge{
+font-size:13px;
+padding:12px;
+}
+
+.doctor-info .btn{
+display:block;
+width:100%;
+text-align:center;
+}
+.counter-box h2{
+font-size:36px;
+}
+
+.counter-box p{
+font-size:15px;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.why-card{
+padding:25px 18px;
+}
+
+.why-card img{
+width:75px;
+height:75px;
+}
+
+.why-card h4{
+font-size:18px;
+}
+
+.why-card p{
+font-size:14px;
+}
+
+.appointment-box{
+grid-template-columns:1fr;
+padding:30px 20px;
+border-radius:28px;
+}
+
+.testimonial-video-grid{
+grid-template-columns:1fr;
+gap:24px;
+}
+
+.video-card{
+border-radius:24px;
+}
+
+.video-card video{
+height:260px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+gap:30px;
+text-align:center;
+}
+
+.premium-footer{
+padding-bottom:120px;
+}
+
+.appointment-box textarea,
+.appointment-box button{
+grid-column:span 1;
+}
+
+.appointment-box textarea,
+.appointment-box button{
+grid-column:span 1;
+}
+
+.contact-box{
+padding:30px 22px;
+border-radius:28px;
+}
+
+.contact-box h3{
+font-size:28px;
+text-align:center;
+}
+
+.contact-box p{
+font-size:14px;
+text-align:center;
+line-height:1.9;
+}
+
+.map iframe{
+height:320px;
+border-radius:28px;
+}
+
+.popup-content{
+padding:30px 20px;
+}
+
+#popupTitle{
+position:absolute !important;
+top:80px !important;
+left:20px !important;
+bottom:auto !important;
+
+font-size:34px !important;
+line-height:1.1 !important;
+
+max-width:250px !important;
+z-index:5 !important;
+color:#fff !important;
+}
+
+.popup-content p{
+font-size:14px;
+}
+
+#scrollTopBtn{
+bottom:90px;
+right:15px;
+width:50px;
+height:50px;
+font-size:24px;
+}
+.fade-up,
+.fade-up.animate,
+.fade-up.show{
+opacity:1 !important;
+transform:translateY(0) !important;
+}
+#loader img{
+width:80px;
+}
+
+#loader p{
+font-size:16px;
+}
+
+.loader-ring{
+width:35px;
+height:35px;
+border:3px solid #f3e5b5;
+border-top:3px solid #c6a769;
+}
+
+.popup-content{
+height:500px !important;
+}
+
+#popupDescription{
+font-size:18px !important;
+bottom:95px !important;
+line-height:1.7;
+font-weight:500;
+}
+
+.popup-content{
+height:500px !important;
+}
+
+.popup-feature{
+
+gap:15px;
+
+padding:18px;
+
+}
+
+.popup-feature h4{
+
+font-size:16px;
+
+line-height:1.4;
+
+}
+
+.popup-feature p{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+.popup-number{
+
+width:42px;
+
+height:42px;
+
+font-size:18px;
+
+}
+
+}
+
+.section-title h2,
+.about-text h3,
+.contact-box h3,
+.doctor-info h2,
+.footer-col h3{
+font-family:'Montserrat',sans-serif;
+font-weight:800;
+}
+
+.mobile-break{
+display:none;
+}
+
+.faq-section{
+background:linear-gradient(135deg,#f8fafc,#eef6ff,#fafcff);
+position:relative;
+overflow:hidden;
+}
+.doctor-profile{
+background:#f8fafc;
+}
+
+.doctor-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+width:100%;
+}
+
+.doctor-image img{
+width:90%;
+height:450px;
+object-fit:cover;
+border-radius:30px;
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+.doctor-info h2{
+font-size:48px;
+color:#16325b;
+margin-bottom:15px;
+}
+
+.doctor-subtitle{
+font-size:20px;
+color:#c6a769;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.doctor-info p{
+line-height:1.8;
+color:#555;
+margin-bottom:25px;
+}
+
+.doctor-badges{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-bottom:30px;
+}
+
+.doctor-badge{
+background:#FCFCFA;
+padding:16px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+font-weight:600;
+color:#16325b;
+text-align:center;
+}
+
+.faq-box{
+max-width:1000px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:28px;
+}
+
+.faq-item{
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(14px);
+border-radius:28px;
+box-shadow:
+0 20px 55px rgba(22,50,91,0.08),
+0 8px 22px rgba(198,167,105,0.05);
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.7);
+}
+
+.faq-item:hover{
+transform:translateY(-5px);
+box-shadow:
+0 28px 70px rgba(22,50,91,0.12),
+0 10px 30px rgba(198,167,105,0.08);
+transition:0.3s;
+}
+
+.faq-item.active{
+box-shadow:
+0 30px 75px rgba(22,50,91,0.14),
+0 12px 35px rgba(198,167,105,0.12);
+border:1px solid rgba(198,167,105,0.25);
+}
+
+.faq-question{
+width:100%;
+background:none;
+border:none;
+padding:28px 30px;
+font-size:19px;
+font-weight:600;
+color:#16325b;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+text-align:left;
+transition:0.3s;
+}
+
+.faq-question span{
+font-size:30px;
+font-weight:700;
+color:#c6a769;
+transition:0.3s ease;
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.45s ease, opacity 0.35s ease;
+opacity:0;
+}
+
+.faq-answer p{
+padding:0 30px 28px;
+line-height:1.9;
+color:#666;
+font-size:15px;
+}
+
+.appointment-section{
+background:#f8fafc;
+}
+
+.appointment-box{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:24px;
+background:rgba(255,255,255,0.88);
+backdrop-filter:blur(18px);
+padding:55px;
+border-radius:35px;
+box-shadow:
+0 25px 70px rgba(22,50,91,0.12),
+0 8px 25px rgba(198,167,105,0.08);
+border:1px solid rgba(255,255,255,0.7);
+position:relative;
+overflow:hidden;
+}
+
+.form-field{
+width:100%;
+}
+
+.full-width{
+grid-column:1 / 3;
+}
+
+
+.appointment-box input,
+.appointment-box select,
+.appointment-box textarea{
+width:100%;
+padding:20px 22px;
+border:1px solid #dce7f2;
+border-radius:20px;
+font-size:15px;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#ffffff,#f8fafc);
+outline:none;
+transition:0.3s;
+box-shadow:0 6px 18px rgba(22,50,91,0.04);
+}
+.appointment-box input:focus,
+.appointment-box select:focus,
+.appointment-box textarea:focus{
+border-color:#c6a769;
+box-shadow:0 0 0 4px rgba(198,167,105,0.15);
+}
+
+.appointment-box textarea{
+height:140px;
+resize:none;
+grid-column:1 / 3;
+}
+
+.appointment-box button{
+grid-column:1 / 3;
+width:100%;
+font-size:18px;
+padding:20px;
+border:none;
+border-radius:22px;
+background:linear-gradient(135deg,#16325b,#c6a769);
+color:white;
+font-weight:700;
+box-shadow:0 15px 35px rgba(22,50,91,0.18);
+transition:0.3s;
+cursor:pointer;
+}
+.appointment-box button:hover{
+transform:translateY(-4px);
+box-shadow:0 20px 45px rgba(22,50,91,0.22);
+}
+
+.service-popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:9999;
+padding:15px;
+pointer-events:none;
+}
+
+.popup-content{
+position:relative;
+width:min(900px,95%);
+max-height:90vh;
+
+border-radius:30px;
+overflow-y:auto;
+overflow-x:hidden;
+
+background:#fff;
+
+transform:scale(.92);
+opacity:0;
+
+transition:
+transform .35s ease,
+opacity .35s ease;
+}
+
+.popup-image{
+width:100%;
+height:350px;
+object-fit:cover;
+display:block;
+position:relative;
+}
+
+#popupTitle,
+#popupDescription{
+padding:25px 45px;
+max-width:760px;
+margin:auto;
+color:#16325b;
+}
+
+.popup-content .btn{
+display:block;
+width:260px;
+margin:20px auto 35px;
+text-align:center;
+}
+
+#popupTitle{
+font-size:42px;
+margin-top:10px;
+}
+
+#popupDescription{
+color:#555;
+line-height:1.8;
+font-size:17px;
+padding-bottom:30px;
+}
+
+.popup-content .btn{
+margin:0 35px 35px;
+display:inline-block;
+}
+
+#popupTitle,
+#popupDescription,
+.popup-content .btn{
+max-width:500px;
+}
+
+.popup-close{
+position:absolute;
+top:18px;
+right:22px;
+font-size:34px;
+cursor:pointer;
+color:white;
+font-weight:700;
+z-index:5;
+}
+
+.popup-content h2{
+font-size:42px;
+color:#16325b;
+margin:0;
+}
+
+/* Popup Content Styling */
+
+#popupDescription h3{
+font-size:28px;
+color:#16325b;
+margin:40px 0 18px;
+font-weight:700;
+padding-bottom:12px;
+border-bottom:3px solid #f1e2b8;
+position:relative;
+}
+
+#popupDescription h3::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-3px;
+width:80px;
+height:3px;
+background:#c6a769;
+border-radius:10px;
+}
+
+#popupDescription p{
+font-size:17px;
+line-height:1.9;
+color:#555;
+margin-bottom:20px;
+}
+
+#popupDescription ul{
+margin:15px 0 25px 25px;
+}
+
+#popupDescription li{
+margin-bottom:12px;
+font-size:17px;
+line-height:1.8;
+color:#555;
+}
+
+#popupDescription strong{
+color:#16325b;
+}
+
+#popupDescription{
+padding-bottom:40px;
+}
+
+.popup-benefit{
+
+background:#fffdf7;
+border-left:5px solid #c6a769;
+padding:18px 22px;
+margin:12px 0;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+font-size:17px;
+color:#444;
+
+transition:.3s;
+
+}
+
+.popup-benefit:hover{
+
+transform:translateX(8px);
+
+box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+}
+
+.popup-step{
+
+display:flex;
+align-items:flex-start;
+gap:18px;
+
+background:#f8fafc;
+
+padding:18px 22px;
+
+margin:18px 0;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.popup-number{
+
+width:50px;
+height:50px;
+
+border-radius:50%;
+
+background:#16325b;
+
+color:#fff;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:20px;
+font-weight:700;
+
+flex-shrink:0;
+
+}
+
+.popup-step h4{
+
+margin:0 0 8px;
+
+font-size:18px;
+
+font-weight:700;
+
+color:#16325b;
+
+}
+
+.popup-step p{
+
+margin:0;
+
+font-size:15px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+.popup-feature{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:18px;
+
+background:#fffdf7;
+
+border-left:5px solid #c6a769;
+
+padding:20px;
+
+margin:18px 0;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.popup-feature div:last-child{
+
+flex:1;
+
+}
+
+.popup-feature h4{
+
+margin:0 0 8px;
+
+font-size:18px;
+
+color:#16325b;
+
+font-weight:700;
+
+}
+
+.popup-feature p{
+
+margin:0;
+
+font-size:15px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+.popup-tip{
+
+background:linear-gradient(135deg,#fff9eb,#fffdf7);
+
+border-left:6px solid #c6a769;
+
+padding:22px;
+
+margin:30px 0;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.popup-tip h4{
+
+margin-bottom:10px;
+
+color:#16325b;
+
+font-size:20px;
+
+}
+
+.popup-tip p{
+
+margin:0;
+
+color:#555;
+
+line-height:1.8;
+
+}
+
+.popup-accordion{
+margin:25px 0;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.popup-accordion-item{
+background:#fff;
+border-bottom:1px solid #ececec;
+}
+
+.popup-accordion-item:last-child{
+border-bottom:none;
+}
+
+.popup-accordion-question{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 22px;
+
+cursor:pointer;
+
+font-size:17px;
+font-weight:600;
+color:#16325b;
+
+transition:.3s ease;
+
+}
+
+.popup-accordion-question:hover{
+
+background:#f8fafc;
+
+}
+
+.popup-accordion-question span{
+
+font-size:24px;
+font-weight:700;
+color:#c6a769;
+
+transition:.3s ease;
+
+}
+
+.popup-accordion-answer{
+
+max-height:0;
+overflow:hidden;
+
+transition:max-height .35s ease;
+
+}
+
+.popup-accordion-answer p{
+
+padding:0 22px 18px;
+
+font-size:15px;
+line-height:1.8;
+
+color:#555;
+
+margin:0;
+
+}
+
+.popup-features{
+display:grid;
+grid-template-columns:1fr;
+gap:12px;
+margin-bottom:30px;
+}
+
+.popup-features div{
+background:#f8fafc;
+padding:14px;
+border-radius:16px;
+font-weight:600;
+color:#16325b;
+}
+
+@keyframes popupFade{
+from{
+opacity:0;
+transform:scale(0.9);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+.fade-up{
+opacity:1;
+transform:translateY(0);
+transition:all 0.9s ease;
+}
+
+.fade-up.animate{
+opacity:0;
+transform:translateY(70px) scale(0.98);
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+.google-live-review{
+padding:40px 20px 90px;
+background:#eef3f8;
+}
+
+.elfsight-app-4355b1d9-e683-4520-9ba8-bbfdf0b3905d{
+max-width:1200px;
+margin:auto;
+}
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#eef4fb;
+}
+
+::-webkit-scrollbar-thumb{
+background:linear-gradient(#16325b,#c6a769);
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:linear-gradient(#083766,#e0b93f);
+}
+
+.footer-social{
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+gap:10px;
+}
+
+.iti{
+width:100%;
+}
+
+.iti input{
+width:100% !important;
+height:65px !important;
+padding-left:95px !important;
+padding-right:20px !important;
+border-radius:20px !important;
+}
+
+.iti__flag-container{
+padding-left:15px;
+}
+
+.service-card,
+.gallery-card,
+.video-card,
+.counter-box,
+.why-card,
+.popup-content,
+.comparison-container,
+.slider-handle,
+.btn,
+.navbar{
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.mobile-break{
+display:none;
+}
+
+@media (max-width:991px){
+
+.mobile-break{
+display:block;
+}
+
+.about-text h3{
+font-size:27px;
+line-height:1.15;
+}
+
+}
+
+@media (min-width:992px){
+
+.popup-content{
+width:820px;
+}
+
+.popup-image{
+height:300px;
+}
+
+#popupTitle,
+#popupDescription{
+max-width:700px;
+margin:auto;
+}
+
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Dentist",
+  "name":"Dr. Amrita's Dentacare",
+  "url":"https://dramritasdentacare.com/",
+  "logo":"https://dramritasdentacare.com/images/logo.png",
+  "image":"https://dramritasdentacare.com/images/clinic1.jpeg",
+  "telephone":"+918850969352",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Shop no 11, Sukh Angan CHS LTD, Ashish complex, Opp Silver Park, Near Jangid Circle, Mira Road (East) Mumbai-401107",
+    "addressLocality":"Mira Road",
+    "addressRegion":"Maharashtra",
+    "postalCode":"401107",
+    "addressCountry":"IN"
+  },
+  "openingHours":[
+"Mo-Su 11:00-15:30",
+"Mo-Su 17:00-21:30"
+],
+
+"sameAs":[
+    "https://www.instagram.com/dramritasdentacare"
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="loader">
+<img src="images/logo.png" alt="Dr. Amrita's Dentacare Logo">
+<div class="loader-ring"></div>
+  <p>Creating Beautiful Smiles...</p>
+</div>
+
+<header class="navbar">
+<div class="container nav-wrap">
+
+<div class="logo-wrap">
+<img src="images/logo.png" alt="Clinic Logo">
+
+<div class="brand-text">
+<h1>DR. AMRITA'S DENTACARE</h1>
+<p>Treating Roots,Restoring Smiles</p>
+</div>
+</div>
+<a href="tel:+918850969352" class="btn btn-gold mobile-call">
+📞
+</a>
+
+<div class="menu-toggle" id="menuToggle">
+☰
+</div>
+
+
+<nav>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<a href="tel:+918850969352" class="btn btn-gold desktop-call">
+Call Now
+</a>
+
+</div>
+</header>
+
+<section class="premium-hero" id="home">
+
+<video autoplay muted loop playsinline class="hero-bg-video">
+<source src="images/Clinic Video 1.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+<h1>DR. AMRITA'S DENTACARE</h1>
+
+<p>Gentle Dentistry • Family Dental Care • Advanced Treatment</p>
+
+
+<div class="hero-buttons">
+<a href="#appointment" class="btn btn-gold">Book Appointment</a>
+<a href="tel:+918850969352" class="btn btn-outline">Call Now</a>
+</div>
+</div>
+
+</section>
+
+<section class="section" id="about">
+<div class="container">
+
+
+
+<div class="about-grid">
+
+
+<div class="about-text">
+<h3>
+Your Destination for Excellent<br class="mobile-break">
+Dental Care in Mira Road !
+</h3>
+
+<p>
+Advanced dental care focused on comfort, precision and beautiful long term results.
+</p>
+
+<div class="why-grid">
+
+<div class="why-card">
+<img src="images/experienced.jpeg">
+<h4>Trusted Expertise</h4>
+<p>Expert dental care with precision, comfort and trusted treatment experience.</p>
+</div>
+
+<div class="why-card">
+<img src="images/affordable.jpeg">
+<h4>Affordable Care</h4>
+<p>Transparent treatment plans designed for quality care within your budget.</p>
+</div>
+
+<div class="why-card">
+<img src="images/technology.jpeg">
+<h4>Advanced Technology</h4>
+<p>Modern painless equipment for safe and efficient dental procedures.</p>
+</div>
+
+<div class="why-card">
+<img src="images/hygiene.jpeg">
+<h4>Safety & Hygiene</h4>
+<p>Strict sterilization and hygiene standards for every patient visit.</p>
+</div>
+
+<div class="why-card">
+<img src="images/expertcare.jpeg">
+<h4>Patient-First Approach</h4>
+<p>Your comfort and unique needs are our priority, delivering gentle care tailored specifically to you.</p>
+</div>
+
+<div class="why-card">
+<img src="images/prioritycare.jpeg">
+<h4>Emergency Dental Care</h4>
+<p>Prompt, expert relief and same-day attention for urgent dental concerns when you need it most.</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section doctor-profile fade-up">
+
+<div class="container">
+
+<div class="doctor-grid">
+
+<div class="doctor-image">
+<img src="images/doctor-profile..jpeg" alt="Dr Amrita">
+</div>
+
+<div class="doctor-info">
+
+<h2>Know Your Dentist</h2>
+
+<p class="doctor-subtitle">
+Dr. Amrita Mishra (BDS,FCD)
+</p>
+
+<p>
+Dr. Amrita Mishra is the visionary founder behind Dr. Amrita’s Dentacare. Built on a strong foundation of trust, comfort, and clinical excellence, the clinic reflects her dedication to patient first oral healthcare.
+</p>
+
+<p>
+Dr. Amrita has over 5+ years of experience in creating healthy smiles, with a special focus on performing painless single-visit root canal treatments and cosmetic smile makeovers.
+She believes that a visit to the dentist should be completely comfortable and stress-free, and every treatment plan is carefully tailored to ensure long-term dental wellness.
+</p>
+
+
+<a href="#appointment" class="btn btn-gold">
+Book Appointment
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="counter-section fade-up">
+
+<div class="container">
+
+<div class="counter-grid">
+
+<div class="counter-box">
+<div class="counter-icon">🏆</div>
+<h2 class="counter" data-target="5">0</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="counter-box">
+<div class="counter-icon">😁</div>
+<h2 class="counter" data-target="1000">0</h2>
+<p>Fixed Smiles</p>
+</div>
+
+<div class="counter-box">
+<div class="counter-icon">✨</div>
+<h2 class="counter" data-target="100">0</h2>
+<p>Painless Care</p>
+</div>
+
+<div class="counter-box">
+<div class="counter-icon">🦷</div>
+<h2 class="counter" data-target="5000">0</h2>
+<p>Treated Patients</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section fade-up" id="services">
+<div class="container">
+
+<div class="section-title">
+<h2>Our Premium Services</h2>
+<p>Complete modern dental solutions.</p>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card" onclick="openServicePopup('Root Canal Treatment')">
+
+<img src="images/Rootcanal.jpg"
+class="service-image"
+alt="Root Canal Treatment in Mira Road">
+
+<h3>Root Canal Treatment</h3>
+
+<p>Advanced painless root canal procedures for infected teeth.</p>
+
+<span class="read-more">
+Read More →
+</span>
+
+</div>
+
+<div class="service-card" onclick="openServicePopup('Tooth Fillings')">
+
+<img src="images/filling.jpeg"
+class="service-image"
+alt="Tooth Filling Treatment in Mira Road">
+<h3>Tooth Fillings</h3>
+<p>Tooth coloured fillings for cavity repair and smile restoration.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Dentures')">
+<img src="images/denture.jpeg"
+class="service-image"
+alt="Dentures Treatment in Mira Road">
+<h3>Dentures</h3>
+<p>Comfortable removable tooth replacement solutions.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Dental Implants')">
+<img src="images/implant.jpeg"
+class="service-image"
+alt="Dental Implants in Mira Road">
+<h3>Dental Implants</h3>
+<p>Permanent natural looking tooth replacement treatment.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Teeth Braces')">
+<img src="images/braces.jpeg"
+class="service-image"
+alt="Teeth Braces Treatment in Mira Road">
+<h3>Teeth Braces</h3>
+<p>Orthodontic correction for properly aligned teeth.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Clear Aligners')">
+<img src="images/aligners.jpeg"
+class="service-image"
+alt="Clear Aligners Treatment in Mira Road">
+<h3>Clear Aligners</h3>
+<p>Invisible modern teeth straightening treatment.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Teeth Cleaning')">
+<img src="images/cleaning.jpeg"
+class="service-image"
+alt="Professional Teeth Cleaning in Mira Road">
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning for plaque removal.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Teeth Whitening')">
+<img src="images/whitening.jpeg"
+class="service-image"
+alt="Teeth Whitening Treatment in Mira Road">
+<h3>Teeth Whitening</h3>
+<p>Bright smile enhancement with safe whitening treatment.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Smile Designing')">
+<img src="images/smile-design.jpeg"
+class="service-image"
+alt="Smile Designing in Mira Road">
+<h3>Smile Designing</h3>
+<p>Cosmetic smile makeover for confidence and aesthetics.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Dental Crown and Bridges')">
+<img src="images/Dental Crown and Bridges.jpeg"
+class="service-image"
+alt="Dental Crown and Bridges Treatment in Mira Road">
+<h3>Dental Crown and Bridges</h3>
+<p>Natural looking crowns and bridges to restore damaged or missing teeth.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Pediatric Dentistry')">
+<img src="images/Pediatric Dentistry.jpeg"
+class="service-image"
+alt="Pediatric Dentist in Mira Road">
+<h3>Pediatric Dentistry</h3>
+<p>Gentle dental care for children focused on healthy growing smiles.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Tooth Extraction')">
+<img src="images/extraction.jpeg"
+class="service-image"
+alt="Tooth Extraction Treatment in Mira Road">
+<h3>Tooth Extraction</h3>
+<p>Safe painless tooth removal procedures.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Full Mouth Reconstruction')">
+<img src="images/Full mouth reconstruction.jpeg"
+class="service-image"
+alt="Full Mouth Reconstruction in Mira Road">
+<h3>Full Mouth Reconstruction</h3>
+<p>Comprehensive restoration of damaged teeth, bite and smile function.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Wisdom Tooth Removal')">
+<img src="images/wisdom.jpeg"
+class="service-image"
+alt="Wisdom Tooth Removal in Mira Road">
+<h3>Wisdom Tooth Removal</h3>
+<p>Safe, painless wisdom tooth extraction for simple or complex cases in a stress-free environment.</p>
+<span class="read-more">
+Read More →
+</span>
+</div>
+
+<div class="service-card" onclick="openServicePopup('Gums Treatment')">
+<img src="images/gums.jpeg"
+class="service-image"
+alt="Gum Treatment in Mira Road">
+<h3>Gums Treatment</h3>
+<p>Comprehensive therapies to restore and protect your gum health.</p>
+<span class="read-more">
+Read More →
+</span>
+
+</div>
+</div>
+</div>
+</section>
+<section class="section before-after fade-up">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Smile Transformations</h2>
+<p>Real smile makeovers with advanced dental care</p>
+</div>
+
+<!-- FIRST SLIDER -->
+<div class="slider-row">
+
+<!-- FIRST SLIDER -->
+<div class="comparison-container">
+<div class="label-before">Before</div>
+<div class="label-after">After</div>  
+
+<div class="img-wrapper">
+<img src="images/after.jpeg" alt="Before Treatment">
+</div>
+
+<div class="img-wrapper overlay-img" id="overlay">
+<img src="images/before.jpeg" alt="After Treatment">
+</div>
+
+<div class="slider-line" id="sliderLine"></div>
+
+<div class="slider-handle" id="sliderHandle">
+⇆
+</div>
+
+</div>
+
+<!-- SECOND SLIDER -->
+<div class="comparison-container second-slider">
+<div class="label-before">Before</div>
+<div class="label-after">After</div>  
+
+<div class="img-wrapper">
+<img src="images/after 2.jpeg" alt="Before Treatment">
+</div>
+
+<div class="img-wrapper overlay-img" id="overlay2">
+<img src="images/before 2.jpeg" alt="After Treatment">
+</div>
+
+<div class="slider-line" id="sliderLine2"></div>
+
+<div class="slider-handle" id="sliderHandle2">
+⇆
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div class="service-popup" id="servicePopup">
+
+<div class="popup-content">
+
+<span class="popup-close" onclick="closeServicePopup()">×</span>
+
+<img id="popupImage" src="" class="popup-image">
+
+<h2 id="popupTitle">Service Name</h2>
+
+<div id="popupDescription"></div>
+
+
+<a href="#appointment" class="btn btn-gold" onclick="closeServicePopup()">
+📅 Book Appointment
+</a>
+
+</div>
+
+</div>
+
+<section class="section gallery fade-up" id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Clinic Gallery</h2>
+<p>
+Modern clinic environment designed for comfort, hygiene and premium patient care.
+</p>
+</div>
+
+<div class="premium-gallery-grid">
+
+<div class="gallery-card large">
+<img src="images/clinic1.jpeg"
+alt="Dr Amrita Dentacare Clinic Entrance"
+loading="lazy">
+
+<div class="gallery-overlay">
+<h3>Premium Clinic Entrance</h3>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/clinic2.jpeg"
+alt="Dental Clinic Reception Area Mira Road"
+loading="lazy">
+
+<div class="gallery-overlay">
+<h3>Reception & Clinic Area</h3>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/clinic3.jpeg"
+alt="Advanced Dental Operatory Mira Road"
+loading="lazy">
+
+<div class="gallery-overlay">
+<h3>Dental Operatory</h3>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/clinic4.jpeg"
+alt="Dental Consultation Room Mira Road"
+loading="lazy">
+
+<div class="gallery-overlay">
+<h3>Consultation Space</h3>
+</div>
+</div>
+
+<div class="gallery-card wide">
+<img src="images/clinic5.jpeg"
+alt="Dental Sterilization Zone Mira Road"
+loading="lazy">
+
+<div class="gallery-overlay">
+<h3>Sterilization Zone</h3>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/clinic6.jpeg"
+alt="Modern Dental Treatment Unit Mira Road"
+loading="lazy">
+
+<div class="gallery-overlay">
+<h3>Advanced Care Unit</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section testimonials" id="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Patient Video Testimonials</h2>
+            <p>Real smiles. Real experiences.</p>
+        </div>
+
+        <div class="testimonial-wrapper">
+
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="testimonial-carousel"> 
+              
+              <button class="mute-floating">🔇</button>
+
+                <div class="testimonial-card left">
+                    <video muted playsinline preload="metadata">
+                        <source src="images/Testimonial 1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="testimonial-card active">
+                    <video muted playsinline preload="metadata">
+                        <source src="images/Testimonial 2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="testimonial-card right">
+                    <video muted playsinline preload="metadata">
+                        <source src="images/Testimonial 3.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="testimonial-card">
+                     <video muted playsinline preload="metadata">
+                        <source src="images/Testimonial 4.mp4" type="video/mp4">
+                      </video>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn next">&#10095;</button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="section faq-section fade-up">
+
+</section>
+
+<section class="google-live-review fade-up">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Google Reviews</h2>
+<p>See what our patients say about their experience at Dr. Amrita's Dentacare.</p>
+</div>
+
+<div class="elfsight-app-4355b1d9-e683-4520-9ba8-bbfdf0b3905d"></div>
+
+</div>
+
+</section>
+
+<section class="section faq-section fade-up">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+<p>Quick answers for common dental questions</p>
+</div>
+
+<div class="faq-box">
+
+<div class="faq-item">
+<button class="faq-question">
+What safety and hygiene protocols are followed at Dr.Amrita’s Dentacare?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Dr.Amrita’s Dentacare follows strict sterilization and hygiene protocols using modern equipment. Every instrument and tool is properly sterilized before the treatment.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Is a root canal treatment painful at Dr.Amrita’s Dentacare and how many visits does it take?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>No, it is completely painless. With modern technology at Dr.Amrita’s Dentacare, a routine root canal treatment at our clinic gets completed in a single visit within 45 to 60 minutes. However in severe and long-standing infection cases, it may take two to three sessions before the final sealing to ensure the tooth is thoroughly healed.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+What types of braces are offered at Dr.Amrita's Dentacare?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Here are a few types of braces we offer: Metal braces, Ceramic braces, Lingual braces and Clear aligners. Each type has specific benefits and effectiveness.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+What are dental Veeners and can they fix gaps or stained teeth at Dr.Amrita’s Dentacare?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Yes! At Dr.Amrita’s Dentacare, we use custom-designed, ultra-thin shells called Veneers that are bonded to the front of your teeth. They are a fantastic, minimally invasive way to instantly correct deep stains, close minor gaps, or reshape chipped teeth for a flawless, natural-looking smile.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Do you accept emergency dental cases without a prior appointment at Dr. Amrita’s Dentacare?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>
+Yes we prioritize dental emergencies at Dr. Amrita’s Dentacare. If you are experiencing a severe toothache, a broken front tooth, or a sudden injury, you can walk in directly or call us. We will fast-track your visit to provide immediate pain relief and care.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+I am very anxious about dental visits. Can I trust Dr. Amrita’s Dentacare to make it comfortable for complete family dental care?
+<span>+</span>
+</button>
+<div class="faq-answer">
+<p>Absolutely. We completely understand dental anxiety and specialize in providing a gentle, patient-first experience at Dr. Amrita’s Dentacare. From our calm environment and advanced painless treatment techniques to taking the time to listen to your concerns, we ensure every visit for both kids and adults is completely relaxed, comfortable, and tailored to your family's pace.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section appointment-section fade-up" id="appointment">
+<div class="container">
+
+<div class="section-title">
+<h2>Instant Appointment Booking</h2>
+<p>Book your consultation directly on WhatsApp</p>
+</div>
+
+<div class="appointment-box">
+
+<div class="form-field">
+<input type="text" id="patientName" placeholder="Your Full Name">
+</div>
+
+<div class="form-field">
+<input type="tel" id="patientPhone" placeholder="Phone Number">
+</div>
+
+<div class="form-field">
+<select id="patientTreatment">
+<option value="">Reason of Visit</option>
+<option>General consultation</option>
+<option>Root Canal Treatment (RCT)</option>
+<option>Gums Treatment</option>
+<option>Teeth Whitening</option>
+<option>Wisdom Tooth Removal</option>
+<option>Dentures</option>
+<option>Braces / Aligners</option>
+<option>Smile Designing</option>
+<option>Crown & Bridges</option>
+<option>Dental Implants</option>
+<option>Emergency Dental Care</option>
+<option>Teeth Cleaning</option>
+<option>Tooth Extraction</option>
+<option>Tooth Filling</option>
+<option>Laser Gum Depigmentation</option>
+<option>Tooth Jewellery</option>
+<option>Full Mouth Reconstruction</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-field">
+<input type="date" id="patientDate">
+</div>
+
+<div class="form-field full-width">
+<textarea id="patientMessage" placeholder="Your Message"></textarea>
+</div>
+
+<div class="form-field full-width">
+<button onclick="sendWhatsAppAppointment()" class="btn btn-gold">
+📅 Book Appointment
+</button>
+</div>
+
+</div>
+</div>
+
+</section>
+<section class="section fade-up" id="contact">
+<div class="container">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+<h3>Clinic Details</h3>
+
+<p><strong>Phone:</strong> +91 8850969352</p>
+<p><strong>Email:</strong> dramritasdentacare@gmail.com</p>
+<p>
+<strong>Instagram:</strong>
+<a href="https://instagram.com/dramritasdentacare" target="_blank">
+@dramritasdentacare
+</a>
+</p>
+<p><strong>Timing:</strong> Monday to Sunday 11 AM-3:30 PM | 5 PM-9:30 PM</p>
+
+<p>
+<strong>Address:</strong><br>
+Shop No 11, Sukh Angan CHS LTD,<br>
+Ashish Complex, Opp Silver Park,<br>
+Near Jangid Circle, Mira Road East
+</p>
+
+<div class="hero-buttons">
+<a href="tel:+918850969352" class="btn btn-gold">Call Clinic</a>
+<a href="https://wa.me/918850969352" class="btn btn-outline">WhatsApp</a>
+</div>
+
+</div>
+
+<div class="map">
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.0336009355424!2d72.8693177737426!3d19.28090494551081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1b9453c90f1%3A0x49befdad3b41244!2sDr.Amrita%27s%20Dentacare!5e0!3m2!1sen!2sin!4v1779647450089!5m2!1sen!2sin"
+width="100%"
+height="500"
+style="border:0; border-radius:25px;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+</div>
+</div>
+</section>
+
+<button class="scroll-top" id="scrollTopBtn">
+↑
+</button>
+<a href="https://wa.me/918850969352" class="whatsapp">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<footer class="premium-footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-col">
+<h3>DR. AMRITA'S DENTACARE</h3>
+<p>
+Premium dental care focused on comfort, trust, advanced treatments and beautiful healthy smiles.
+</p>
+</div>
+
+<div class="footer-col">
+<h4>Quick Links</h4>
+
+<div class="expertise-list">
+
+<a href="#home" class="expertise-item">🏠 Home</a>
+
+<a href="#about" class="expertise-item">👨‍⚕️ About</a>
+
+<a href="#services" class="expertise-item">🦷 Services</a>
+
+<a href="#gallery" class="expertise-item">📸 Gallery</a>
+
+<a href="#contact" class="expertise-item">📍 Contact</a>
+
+</div>
+
+</div>
+
+<div class="footer-col">
+<h4>WHY CHOOSE US ? </h4>
+<div class="footer-feature">● Advanced Dental Technology</div>
+
+<div class="footer-feature">● Comfortable Painless Care</div>
+
+<div class="footer-feature">● Emergency Dental Support</div>
+
+<div class="footer-feature">● Personalized Treatment Plans</div>
+
+<div class="footer-feature">● All Dental Treatments Under One Roof</div>
+</div>
+
+<div class="footer-col">
+<h4>Connect With Us</h4>
+
+<a href="https://wa.me/918850969352" target="_blank" class="footer-social">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+WhatsApp
+</a>
+
+<a href="https://instagram.com/dramritasdentacare" target="_blank" class="footer-social">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+Instagram
+</a>
+
+<a href="#appointment">
+📅 Book Appointment
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© <span id="year"></span> Dr. Amrita's Dentacare. All Rights Reserved.
+</div>
+</div>
+
+</footer>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+
+const startCounter = () => {
+
+counters.forEach(counter => {
+
+const target = +counter.getAttribute('data-target');
+
+let count = 0;
+
+const duration = 2500;
+
+const increment = target / (duration / 30);
+
+const updateCounter = () => {
+
+if(count < target){
+
+count += increment;
+
+if(count > target){
+count = target;
+}
+
+if(target === 100){
+counter.innerText = Math.floor(count) + '%';
+}else{
+counter.innerText = Math.floor(count) + '+';
+}
+
+setTimeout(updateCounter, 30);
+
+}else{
+
+if(target === 100){
+counter.innerText = target + '%';
+}else{
+counter.innerText = target + '+';
+}
+
+}
+
+};
+
+updateCounter();
+
+});
+
+};
+
+const counterSection = document.querySelector('.counter-section');
+
+const observer = new IntersectionObserver((entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+startCounter();
+
+observer.disconnect();
+
+}
+
+});
+
+});
+
+observer.observe(counterSection);
+</script>
+<script>
+function setupSlider(containerSelector, overlayId, sliderId, lineId) {
+const container = document.querySelector(containerSelector);
+const overlay = document.getElementById(overlayId);
+const slider = document.getElementById(sliderId);
+const line = document.getElementById(lineId);
+
+let isDragging = false;
+
+function moveSlider(clientX){
+const rect = container.getBoundingClientRect();
+let x = clientX - rect.left;
+
+if(x < 0) x = 0;
+if(x > rect.width) x = rect.width;
+
+const percent = (x / rect.width) * 100;
+
+overlay.style.width = percent + '%';
+slider.style.left = percent + '%';
+line.style.left = percent + '%';
+}
+
+slider.addEventListener('mousedown', () => {
+isDragging = true;
+});
+
+window.addEventListener('mouseup', () => {
+isDragging = false;
+});
+
+window.addEventListener('mousemove', (e) => {
+if(!isDragging) return;
+moveSlider(e.clientX);
+});
+
+slider.addEventListener('touchstart', () => {
+isDragging = true;
+});
+
+window.addEventListener('touchend', () => {
+isDragging = false;
+});
+
+window.addEventListener('touchmove', (e) => {
+if(!isDragging) return;
+moveSlider(e.touches[0].clientX);
+});
+}
+
+setupSlider('.comparison-container', 'overlay', 'sliderHandle', 'sliderLine');
+setupSlider('.second-slider', 'overlay2', 'sliderHandle2', 'sliderLine2');
+
+document.getElementById('overlay').style.width = '50%';
+document.getElementById('sliderHandle').style.left = '50%';
+document.getElementById('sliderLine').style.left = '50%';
+
+document.getElementById('overlay2').style.width = '50%';
+document.getElementById('sliderHandle2').style.left = '50%';
+document.getElementById('sliderLine2').style.left = '50%';
+</script>
+<script>
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+question.addEventListener('click', () => {
+const answer = question.nextElementSibling;
+const icon = question.querySelector('span');
+const faqItem = question.parentElement;
+
+if(answer.style.maxHeight){
+answer.style.maxHeight = null;
+answer.style.opacity = 0;
+icon.textContent = '+';
+icon.style.transform = 'rotate(0deg)';
+faqItem.classList.remove('active');
+} else {
+answer.style.maxHeight = answer.scrollHeight + 'px';
+answer.style.opacity = 1;
+icon.textContent = '−';
+icon.style.transform = 'rotate(180deg)';
+faqItem.classList.add('active');
+}
+});
+});
+</script>
+
+<script>
+function sendWhatsAppAppointment(){
+
+const name = document.getElementById('patientName').value;
+const phone =
+window.intlTelInputGlobals
+.getInstance(document.getElementById('patientPhone'))
+.getNumber();
+const treatment = document.getElementById('patientTreatment').value;
+const date = document.getElementById('patientDate').value;
+const message = document.getElementById('patientMessage').value;
+
+if(!phone){
+alert("Please enter phone number");
+return;
+}
+
+const whatsappMessage = `NEW APPOINTMENT REQUEST
+
+Name: ${name}
+Phone: ${phone}
+Treatment: ${treatment}
+Preferred Date: ${date}
+Message: ${message}`;
+window.open(
+`https://wa.me/918850969352?text=${encodeURIComponent(whatsappMessage)}`,
+'_blank'
+);
+
+}
+</script>
+
+<script>
+function openServicePopup(service){
+
+const popup = document.getElementById('servicePopup');
+const title = document.getElementById('popupTitle');
+const desc = document.getElementById('popupDescription');
+const image = document.getElementById('popupImage');
+
+const serviceDetails = {
+
+"Root Canal Treatment":`
+
+<h3>🦷 What is Root Canal Treatment?</h3>
+
+<p>
+Root Canal Treatment (RCT) is a specialized dental procedure used to save a tooth that has become infected or severely damaged due to deep decay, cracks, trauma, or repeated dental procedures. Instead of removing the tooth, the infected pulp is carefully removed, the root canals are cleaned, disinfected, and sealed to prevent future infection.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we use advanced rotary instruments and modern techniques to provide comfortable, precise, and painless Root Canal Treatment while preserving your natural tooth.
+</p>
+
+<h3>⚠️ Signs You May Need a Root Canal</h3>
+
+<ul>
+<li>✔ Severe or continuous tooth pain</li>
+
+<li>✔ Pain while chewing food</li>
+
+<li>✔ Sensitivity to hot or cold foods</li>
+
+<li>✔A noticeable bump or discharge on the gums near the infected tooth</li>
+
+<li>✔ Deep cavity reaching the nerve</li>
+
+<li>✔ Tooth discoloration</li>
+
+<li>✔ Dental abscess or infection</li>
+
+</ul>
+
+<h3>⭐ Benefits of Root Canal Treatment</h3>
+
+<div class="popup-benefit">
+✔ Relieves severe tooth pain
+</div>
+
+<div class="popup-benefit">
+✔ Removes infection completely
+</div>
+
+<div class="popup-benefit">
+✔ Saves your natural tooth
+</div>
+
+<div class="popup-benefit">
+✔ Prevents tooth extraction
+</div>
+
+<div class="popup-benefit">
+✔ Restores normal chewing ability
+</div>
+
+<div class="popup-benefit">
+✔ Long-lasting treatment solution
+</div>
+
+<div class="popup-benefit">
+✔ Improves overall oral health
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Consultation & Diagnosis</h4>
+
+<p>
+We carefully examine your tooth and take a digital X-ray to determine the extent of the infection and plan the most effective treatment.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Comfortable Local Anesthesia</h4>
+
+<p>
+The tooth is completely numbed using local anesthesia, ensuring a comfortable and virtually painless treatment experience.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Cleaning the Root Canals</h4>
+
+<p>
+The infected pulp is gently removed, and the root canals are thoroughly cleaned, shaped, and disinfected to eliminate bacteria and stop the infection.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Sealing the Root Canals</h4>
+
+<p>
+After cleaning, the canals are filled with a biocompatible material and carefully sealed to protect the tooth from future infection.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Final Restoration</h4>
+
+<p>
+Depending on the condition of your tooth, a high-quality dental crown may be placed to restore its strength, appearance, and normal chewing function.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Advanced Rotary Technology</li>
+
+<li>✔ Single Visit Treatment (where clinically possible)</li>
+
+<li>✔ Digital X-Ray Diagnosis</li>
+
+<li>✔ Comfortable & Painless Care</li>
+
+<li>✔ Strict Sterilization Protocols</li>
+
+<li>✔ Personalized Treatment Plans</li>
+
+<li>✔ Experienced Dental Care</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is Root Canal Treatment painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Modern local anesthesia and advanced rotary technology make Root Canal Treatment comfortable and virtually painless.
+</p>
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How many visits are required?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Most Root Canal Treatments are completed in a single visit. Teeth with severe infection may require two appointments.
+</p>
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will I need a dental crown?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. In many cases, especially for back teeth, a dental crown is recommended to restore strength and protect the tooth for many years.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Avoid eating until the numbness wears off.</li>
+
+<li>✔ Take all prescribed medicines as directed.</li>
+
+<li>✔ Avoid chewing hard foods on the treated tooth.</li>
+
+<li>✔ Brush and floss normally to maintain good oral hygiene.</li>
+
+<li>✔ Visit for your follow-up appointment if advised.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>🦷 Save Your Natural Tooth</h4>
+
+<p>
+Early Root Canal Treatment relieves pain, removes infection, and helps preserve your natural tooth. The sooner you seek treatment, the better the long-term outcome.
+</p>
+
+</div>`,
+
+"Tooth Fillings":`
+
+<h3>🦷 What are Tooth Fillings?</h3>
+
+<p>
+Tooth Fillings are a simple and effective treatment used to repair teeth damaged by cavities, minor fractures, or everyday wear. The decayed portion of the tooth is carefully removed and replaced with a strong tooth-coloured filling material that restores both function and appearance.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we use premium aesthetic composite fillings that blend naturally with your teeth, providing a durable, comfortable, and virtually invisible restoration.
+</p>
+
+<h3>⚠️ Signs You May Need a Filling</h3>
+
+<ul>
+
+<li>✔ Tooth sensitivity to hot, cold or sweets</li>
+
+<li>✔ Visible cavity or black spot on a tooth</li>
+
+<li>✔ Food getting stuck between teeth</li>
+
+<li>✔ Mild pain while chewing</li>
+
+<li>✔ Small chipped or broken tooth</li>
+
+<li>✔ Worn-out old filling</li>
+
+<li>✔ Early tooth decay detected during check-up</li>
+
+</ul>
+
+<h3>⭐ Benefits of Tooth Fillings</h3>
+
+<div class="popup-benefit">
+✔ Stops tooth decay from spreading
+</div>
+
+<div class="popup-benefit">
+✔ Restores normal chewing function
+</div>
+
+<div class="popup-benefit">
+✔ Preserves your natural tooth
+</div>
+
+<div class="popup-benefit">
+✔ Natural tooth coloured appearance
+</div>
+
+<div class="popup-benefit">
+✔ Prevents future tooth damage
+</div>
+
+<div class="popup-benefit">
+✔ Quick and painless procedure
+</div>
+
+<div class="popup-benefit">
+✔ Long-lasting restoration
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Dental Examination</h4>
+
+<p>
+Your dentist examines the affected tooth and may take a digital X-ray to determine the extent of decay.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Gentle Removal of Decay</h4>
+
+<p>
+The damaged portion of the tooth is carefully removed while preserving as much healthy tooth structure as possible.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Tooth Preparation</h4>
+
+<p>
+The tooth is cleaned and prepared to ensure the filling bonds securely for long-lasting strength.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Composite Filling Placement</h4>
+
+<p>
+The tooth coloured filling material is placed in layers, shaped precisely, and hardened using a special curing light.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Polishing & Bite Adjustment</h4>
+
+<p>
+The filling is polished for a smooth natural finish and your bite is checked for maximum comfort.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Premium Tooth-Coloured Fillings</li>
+
+<li>✔ Painless & Comfortable Treatment</li>
+
+<li>✔ Advanced Adhesive Technology</li>
+
+<li>✔ Natural Aesthetic Results</li>
+
+<li>✔ Digital Diagnosis</li>
+
+<li>✔ Strict Sterilization Protocols</li>
+
+<li>✔ Personalized Dental Care</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Are tooth fillings painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Tooth fillings are usually painless. Local anesthesia is used whenever needed to ensure complete comfort.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long do tooth coloured fillings last?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+With good oral hygiene and regular dental check-ups, composite fillings can last many years.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Can a filling prevent a Root Canal?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Treating cavities early with a filling often prevents the decay from reaching the nerve and needing Root Canal Treatment.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Avoid eating or drinking for 1 hour after the procedure.</li>
+
+<li>✔ Avoid very hard foods for the first 24 hours.</li>
+
+<li>✔ Maintain good brushing and flossing habits.</li>
+
+<li>✔ Visit your dentist if you notice persistent sensitivity.</li>
+
+<li>✔ Schedule regular dental check-ups every 6 months.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>✨ Treat Cavities Early</h4>
+
+<p>
+Small cavities can usually be repaired with a simple filling. Early treatment helps preserve your natural tooth, avoids unnecessary pain, and prevents more complex procedures in the future.
+</p>
+
+</div>`,
+
+"Dentures":`
+
+<h3>🦷 What are Dentures?</h3>
+
+<p>
+Dentures are custom-made removable prosthetic teeth designed to replace missing teeth and restore your smile, speech, and chewing ability. Whether you've lost a few teeth or an entire arch, modern dentures provide a natural appearance and comfortable fit.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, every denture is individually crafted for excellent comfort, stability, function, and aesthetics using high-quality materials.
+</p>
+
+<h3>⚠️ Who May Need Dentures?</h3>
+
+<ul>
+
+<li>✔ Multiple missing teeth</li>
+
+<li>✔ Complete tooth loss</li>
+
+<li>✔ Difficulty chewing food</li>
+
+<li>✔ Difficulty speaking clearly</li>
+
+<li>✔ Sunken facial appearance</li>
+
+<li>✔ Desire to restore smile and confidence</li>
+
+<li>✔ Looking for an affordable tooth replacement option</li>
+
+</ul>
+
+<h3>⭐ Benefits of Dentures</h3>
+
+<div class="popup-benefit">
+✔ Restores your smile
+</div>
+
+<div class="popup-benefit">
+✔ Improves chewing ability
+</div>
+
+<div class="popup-benefit">
+✔ Enhances speech
+</div>
+
+<div class="popup-benefit">
+✔ Supports facial muscles
+</div>
+
+<div class="popup-benefit">
+✔ Natural-looking appearance
+</div>
+
+<div class="popup-benefit">
+✔ Comfortable custom fit
+</div>
+
+<div class="popup-benefit">
+✔ Cost-effective tooth replacement
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Dental Examination</h4>
+
+<p>
+Your mouth is carefully examined to determine the most suitable type of denture for your needs.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Impressions</h4>
+
+<p>
+Accurate impressions of your gums and remaining teeth are taken to create a perfectly fitting denture.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Trial Fitting</h4>
+
+<p>
+A trial denture is checked for appearance, bite, comfort, and speech before the final denture is prepared.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Final Denture Placement</h4>
+
+<p>
+Your customized denture is delivered and adjusted for the best possible comfort and function.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Follow-up Adjustments</h4>
+
+<p>
+Minor adjustments are performed whenever needed to ensure long-term comfort and proper fit.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Custom Designed Dentures</li>
+
+<li>✔ Natural Looking Teeth</li>
+
+<li>✔ Comfortable Fit</li>
+
+<li>✔ Premium Quality Materials</li>
+
+<li>✔ Experienced Dental Care</li>
+
+<li>✔ Personalized Smile Restoration</li>
+
+<li>✔ Long-Term Follow-up Support</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will dentures look natural?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Modern dentures are designed to closely resemble natural teeth and blend beautifully with your facial appearance.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long do dentures last?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+With proper care and regular dental check-ups, dentures can last many years, although periodic adjustments or replacement may be required.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Can I eat normally with dentures?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. It may take a short adjustment period, but most patients comfortably return to eating a wide variety of foods.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Clean dentures daily using a denture brush.</li>
+
+<li>✔ Remove dentures before sleeping unless advised otherwise.</li>
+
+<li>✔ Soak dentures overnight in a suitable cleaning solution.</li>
+
+<li>✔ Handle dentures carefully to avoid damage.</li>
+
+<li>✔ Visit your dentist regularly for adjustments.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>😁 Smile with Confidence Again</h4>
+
+<p>
+Well-made dentures restore not only missing teeth but also confidence, comfort, speech, and the ability to enjoy your favorite foods again.
+</p>
+
+</div>`,
+
+"Dental Implants":`
+
+<h3>🦷 What are Dental Implants?</h3>
+
+<p>
+Dental Implants are the most advanced and long-lasting solution for replacing one or more missing teeth. A small titanium implant is gently placed into the jawbone where it acts like a natural tooth root. Once healed, a custom-made crown is placed on top, restoring your smile, confidence, and chewing ability.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we use advanced implant planning and modern techniques to provide safe, precise, and comfortable implant treatment with natural-looking results.
+</p>
+
+<h3>⚠️ Signs You May Need Dental Implants</h3>
+
+<ul>
+
+<li>✔ One or more missing teeth</li>
+
+<li>✔ Difficulty chewing food properly</li>
+
+<li>✔ Loose or uncomfortable dentures</li>
+
+<li>✔ Broken tooth beyond repair</li>
+
+<li>✔ Jawbone shrinkage after tooth loss</li>
+
+<li>✔ Want a permanent alternative to removable dentures</li>
+
+<li>✔ Desire a natural-looking smile</li>
+
+</ul>
+
+<h3>⭐ Benefits of Dental Implants</h3>
+
+<div class="popup-benefit">
+✔ Permanent tooth replacement
+</div>
+
+<div class="popup-benefit">
+✔ Looks and feels like a natural tooth
+</div>
+
+<div class="popup-benefit">
+✔ Restores confident chewing and speaking
+</div>
+
+<div class="popup-benefit">
+✔ Prevents jawbone loss
+</div>
+
+<div class="popup-benefit">
+✔ Protects neighbouring healthy teeth
+</div>
+
+<div class="popup-benefit">
+✔ Long-lasting solution with proper care
+</div>
+
+<div class="popup-benefit">
+✔ Enhances smile and facial appearance
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Consultation & Digital Evaluation</h4>
+
+<p>
+A complete examination and digital X-ray are performed to assess bone quality and determine the best implant plan for your smile.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Implant Placement</h4>
+
+<p>
+The titanium implant is gently placed into the jawbone under local anesthesia using precise surgical techniques for maximum comfort.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Healing & Bone Integration</h4>
+
+<p>
+Over the next few months, the implant naturally fuses with the jawbone, creating a strong and stable foundation.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Abutment Placement</h4>
+
+<p>
+A small connector is attached to the implant, preparing it to securely support the final crown.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Final Crown Placement</h4>
+
+<p>
+A custom-designed ceramic crown is fitted to match your natural teeth, completing your smile with excellent function and aesthetics.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Advanced Implant Planning</li>
+
+<li>✔ Premium Quality Implant Systems</li>
+
+<li>✔ Digital X-Ray Diagnosis</li>
+
+<li>✔ Comfortable & Painless Procedure</li>
+
+<li>✔ Strict Sterilization Protocols</li>
+
+<li>✔ Natural Looking Ceramic Crowns</li>
+
+<li>✔ Personalized Aftercare & Follow-up</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Are Dental Implants painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. The procedure is performed under local anesthesia, making it comfortable and virtually painless. Mild soreness after treatment is usually temporary.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long do Dental Implants last?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+With proper oral hygiene and regular dental check-ups, implants can last for many years and often for a lifetime.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Can anyone get Dental Implants?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Most healthy adults are suitable candidates. A clinical examination and digital X-ray help determine if additional bone support is needed before implant placement.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Follow all medications exactly as prescribed.</li>
+
+<li>✔ Avoid smoking during the healing period.</li>
+
+<li>✔ Eat soft foods for the first few days.</li>
+
+<li>✔ Maintain excellent brushing and flossing around the implant.</li>
+
+<li>✔ Attend all scheduled follow-up appointments.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>💎 Invest in a Lifetime Smile</h4>
+
+<p>
+Dental Implants are the closest replacement to natural teeth. They restore confidence, preserve jawbone health, and provide outstanding comfort, function, and aesthetics for years to come.
+</p>
+
+</div>`,
+
+"Teeth Braces":`
+
+<h3>😁 What are Teeth Braces?</h3>
+
+<p>
+Teeth Braces are one of the most effective orthodontic treatments used to straighten crooked teeth, correct bite problems, close gaps, and improve overall dental alignment. Braces apply gentle, continuous pressure to gradually move teeth into their ideal position.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we provide personalized orthodontic treatment using modern braces that deliver healthy function, improved facial aesthetics, and confident smiles for both children and adults.
+</p>
+
+<h3>⚠️ Who May Need Braces?</h3>
+
+<ul>
+
+<li>✔ Crooked teeth</li>
+
+<li>✔ Crowded teeth</li>
+
+<li>✔ Gaps between teeth</li>
+
+<li>✔ Overbite or Underbite</li>
+
+<li>✔ Crossbite or Open Bite</li>
+
+<li>✔ Difficulty cleaning crowded teeth</li>
+
+<li>✔ Smile improvement</li>
+
+</ul>
+
+<h3>⭐ Benefits of Braces</h3>
+
+<div class="popup-benefit">
+✔ Straight, beautiful smile
+</div>
+
+<div class="popup-benefit">
+✔ Corrects bite problems
+</div>
+
+<div class="popup-benefit">
+✔ Improves chewing efficiency
+</div>
+
+<div class="popup-benefit">
+✔ Better oral hygiene
+</div>
+
+<div class="popup-benefit">
+✔ Reduces abnormal tooth wear
+</div>
+
+<div class="popup-benefit">
+✔ Improves speech in certain cases
+</div>
+
+<div class="popup-benefit">
+✔ Long-term oral health
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Orthodontic Consultation</h4>
+
+<p>
+A complete examination and digital X-rays are performed to evaluate your teeth, jaw alignment, and bite.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Treatment Planning</h4>
+
+<p>
+A customized orthodontic plan is created based on your smile goals and dental condition.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Braces Placement</h4>
+
+<p>
+Brackets are carefully bonded to your teeth and connected using orthodontic wires.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Regular Adjustments</h4>
+
+<p>
+Periodic visits allow controlled tooth movement until the desired alignment is achieved.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Retainers</h4>
+
+<p>
+After braces are removed, retainers help maintain your new smile for years to come.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Personalized Orthodontic Care</li>
+
+<li>✔ Advanced Digital Diagnosis</li>
+
+<li>✔ Comfortable Treatment Experience</li>
+
+<li>✔ Regular Progress Monitoring</li>
+
+<li>✔ Premium Quality Materials</li>
+
+<li>✔ Experienced Dental Team</li>
+
+<li>✔ Beautiful Long-Term Results</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+At what age can braces be started?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Braces are commonly started between 10 and 14 years of age, but adults can also achieve excellent results.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Are braces painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+You may feel mild pressure for a few days after placement or adjustment, but it settles quickly.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long does treatment take?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Treatment usually lasts between 12 and 24 months depending on the complexity of the case.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Brush after every meal.</li>
+
+<li>✔ Use floss or interdental brushes daily.</li>
+
+<li>✔ Avoid sticky and very hard foods.</li>
+
+<li>✔ Attend every adjustment appointment.</li>
+
+<li>✔ Wear retainers after treatment.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>😁 A Beautiful Smile Takes Time</h4>
+
+<p>
+Following your orthodontic instructions, maintaining good oral hygiene, and attending regular appointments will ensure the best possible smile and long-lasting results.
+</p>
+
+</div>`,
+
+"Clear Aligners":`
+
+<h3>😁 What are Clear Aligners?</h3>
+
+<p>
+Clear Aligners are transparent, removable orthodontic trays designed to gradually straighten your teeth without the need for traditional metal braces. They are custom-made for your smile and offer a comfortable, discreet, and convenient way to achieve beautifully aligned teeth.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we provide customized Clear Aligner treatment plans that help you achieve a confident smile with maximum comfort and minimal interruption to your daily lifestyle.
+</p>
+
+<h3>⚠️ Who Can Benefit from Clear Aligners?</h3>
+
+<ul>
+
+<li>✔ Crooked or crowded teeth</li>
+
+<li>✔ Gaps between teeth</li>
+
+<li>✔ Mild to moderate bite problems</li>
+
+<li>✔ Relapse after previous braces treatment</li>
+
+<li>✔ Adults seeking invisible orthodontic treatment</li>
+
+<li>✔ Teenagers wanting a discreet option</li>
+
+<li>✔ Anyone wanting a confident smile without metal braces</li>
+
+</ul>
+
+<h3>⭐ Benefits of Clear Aligners</h3>
+
+<div class="popup-benefit">
+✔ Nearly invisible appearance
+</div>
+
+<div class="popup-benefit">
+✔ Comfortable with no metal wires
+</div>
+
+<div class="popup-benefit">
+✔ Removable while eating
+</div>
+
+<div class="popup-benefit">
+✔ Easy to brush and floss
+</div>
+
+<div class="popup-benefit">
+✔ Fewer clinic visits
+</div>
+
+<div class="popup-benefit">
+✔ Predictable smile transformation
+</div>
+
+<div class="popup-benefit">
+✔ Boosts confidence throughout treatment
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Smile Consultation</h4>
+
+<p>
+Your teeth, bite, and smile goals are evaluated to determine whether Clear Aligners are suitable for you.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Digital Scan</h4>
+
+<p>
+Advanced digital impressions are taken to create an accurate 3D model of your teeth.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Customized Treatment Plan</h4>
+
+<p>
+A series of custom aligners is designed to move your teeth gradually into their ideal position.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Wear Your Aligners</h4>
+
+<p>
+Each aligner is worn for approximately 20–22 hours a day and changed as advised by your dentist.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Smile Completion</h4>
+
+<p>
+Once treatment is complete, retainers help maintain your newly aligned smile for years to come.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Customized Digital Treatment Planning</li>
+
+<li>✔ Comfortable Invisible Aligners</li>
+
+<li>✔ Regular Progress Monitoring</li>
+
+<li>✔ Personalized Smile Design</li>
+
+<li>✔ Advanced Orthodontic Care</li>
+
+<li>✔ Premium Patient Experience</li>
+
+<li>✔ Beautiful Natural Results</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Are Clear Aligners better than braces?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+For many mild to moderate orthodontic cases, Clear Aligners provide excellent results while offering greater comfort and aesthetics.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How many hours should I wear my aligners?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+For the best results, aligners should be worn for approximately 20 to 22 hours every day.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Can I eat while wearing aligners?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Aligners should be removed while eating or drinking anything except plain water.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Clean your aligners daily.</li>
+
+<li>✔ Brush your teeth before wearing aligners again.</li>
+
+<li>✔ Wear them 20–22 hours daily.</li>
+
+<li>✔ Store aligners safely when removed.</li>
+
+<li>✔ Attend all review appointments.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>✨ Consistency Creates Beautiful Smiles</h4>
+
+<p>
+The more consistently you wear your aligners, the faster and more predictable your smile transformation will be.
+</p>
+
+</div>`,
+
+"Teeth Cleaning":`
+
+<h3>🪥 What is Professional Teeth Cleaning?</h3>
+
+<p>
+Professional Teeth Cleaning, also known as dental scaling and polishing, is a preventive treatment that removes plaque, tartar (calculus), and stains from your teeth. Even with regular brushing, hardened deposits can build up over time and require professional cleaning to maintain healthy teeth and gums.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we use advanced ultrasonic scaling technology to gently clean your teeth while protecting your enamel and gums, leaving your mouth feeling fresh, healthy, and clean.
+</p>
+
+<h3>⚠️ Signs You May Need Teeth Cleaning</h3>
+
+<ul>
+
+<li>✔ Bleeding gums while brushing</li>
+
+<li>✔ Bad breath (Halitosis)</li>
+
+<li>✔ Yellow stains on teeth</li>
+
+<li>✔ Tartar or plaque build-up</li>
+
+<li>✔ Swollen or tender gums</li>
+
+<li>✔ Early gum disease</li>
+
+<li>✔ Routine preventive dental care</li>
+
+</ul>
+
+<h3>⭐ Benefits of Professional Teeth Cleaning</h3>
+
+<div class="popup-benefit">
+✔ Removes plaque and tartar
+</div>
+
+<div class="popup-benefit">
+✔ Freshens breath
+</div>
+
+<div class="popup-benefit">
+✔ Reduces gum disease risk
+</div>
+
+<div class="popup-benefit">
+✔ Brightens your smile
+</div>
+
+<div class="popup-benefit">
+✔ Helps prevent cavities
+</div>
+
+<div class="popup-benefit">
+✔ Supports healthier gums
+</div>
+
+<div class="popup-benefit">
+✔ Improves overall oral health
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Dental Examination</h4>
+
+<p>
+Your dentist examines your teeth and gums to identify plaque, tartar, staining, and signs of gum disease.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Ultrasonic Scaling</h4>
+
+<p>
+Advanced ultrasonic instruments gently remove hardened tartar and plaque deposits from above and below the gum line.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Professional Polishing</h4>
+
+<p>
+Your teeth are polished to remove surface stains and leave them feeling smooth and shiny.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Fluoride (If Recommended)</h4>
+
+<p>
+When needed, fluoride treatment helps strengthen enamel and reduce the risk of future cavities.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Oral Hygiene Guidance</h4>
+
+<p>
+You'll receive personalized brushing and flossing advice to help maintain your healthy smile between visits.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Advanced Ultrasonic Scaling</li>
+
+<li>✔ Gentle & Comfortable Cleaning</li>
+
+<li>✔ Experienced Dental Team</li>
+
+<li>✔ Modern Sterilization Standards</li>
+
+<li>✔ Personalized Oral Hygiene Advice</li>
+
+<li>✔ Preventive Dental Care Focus</li>
+
+<li>✔ Comfortable Clinic Environment</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Does teeth cleaning damage enamel?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Professional scaling removes plaque and tartar without damaging healthy tooth enamel when performed by a qualified dental professional.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How often should I get my teeth cleaned?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Most people benefit from professional cleaning every six months, although some patients may require more frequent visits depending on their gum health.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will my teeth become whiter after cleaning?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Cleaning removes stains and tartar, making teeth appear cleaner and brighter. For a noticeably whiter shade, professional teeth whitening is recommended.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Brush twice daily using a soft toothbrush.</li>
+
+<li>✔ Floss every day.</li>
+
+<li>✔ Limit tobacco and stain-causing beverages.</li>
+
+<li>✔ Drink plenty of water after meals.</li>
+
+<li>✔ Schedule professional cleaning every 6 months.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>✨ Prevention is Better Than Treatment</h4>
+
+<p>
+Regular professional teeth cleaning is one of the simplest ways to prevent cavities, gum disease, bad breath, and costly dental treatments while keeping your smile healthy and bright.
+</p>
+
+</div>`,
+
+"Teeth Whitening":`
+
+<h3>✨ What is Teeth Whitening?</h3>
+
+<p>
+Teeth Whitening is a safe and effective cosmetic dental treatment that removes stains and lightens the natural shade of your teeth. Professional whitening provides faster, safer, and longer-lasting results than over-the-counter products.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we use professional whitening systems that brighten your smile while protecting your teeth and gums, giving you a noticeably whiter and more confident smile.
+</p>
+
+<h3>⚠️ Who Can Benefit from Teeth Whitening?</h3>
+
+<ul>
+
+<li>✔ Yellow or stained teeth</li>
+
+<li>✔ Coffee or tea stains</li>
+
+<li>✔ Tobacco-related discoloration</li>
+
+<li>✔ Stains caused by aging</li>
+
+<li>✔ Before weddings or special occasions</li>
+
+<li>✔ Smile makeover patients</li>
+
+<li>✔ Anyone wanting a brighter smile</li>
+
+</ul>
+
+<h3>⭐ Benefits of Professional Teeth Whitening</h3>
+
+<div class="popup-benefit">
+✔ Brighter, whiter smile
+</div>
+
+<div class="popup-benefit">
+✔ Boosts self-confidence
+</div>
+
+<div class="popup-benefit">
+✔ Quick in-clinic procedure
+</div>
+
+<div class="popup-benefit">
+✔ Safe for enamel
+</div>
+
+<div class="popup-benefit">
+✔ Removes deep stains effectively
+</div>
+
+<div class="popup-benefit">
+✔ More effective than home products
+</div>
+
+<div class="popup-benefit">
+✔ Immediate visible results
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Smile Evaluation</h4>
+
+<p>
+Your teeth and gums are examined to ensure whitening is the right treatment for you.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Professional Cleaning</h4>
+
+<p>
+Surface plaque and stains are removed to achieve even whitening results.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Protection of Gums</h4>
+
+<p>
+A protective barrier is applied to shield your gums during the whitening procedure.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Whitening Gel Application</h4>
+
+<p>
+Professional whitening gel is applied carefully and activated for maximum stain removal.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Smile Reveal</h4>
+
+<p>
+Your brighter smile is evaluated and after-care instructions are provided for long-lasting results.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Professional Whitening System</li>
+
+<li>✔ Safe & Comfortable Procedure</li>
+
+<li>✔ Visible Results in One Visit</li>
+
+<li>✔ Experienced Cosmetic Dentist</li>
+
+<li>✔ Personalized Shade Selection</li>
+
+<li>✔ Advanced Dental Technology</li>
+
+<li>✔ Premium Patient Care</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is teeth whitening safe?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Professional whitening performed by a dentist is completely safe when carried out using approved materials and proper techniques.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long do the results last?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Results can last from several months to a few years depending on your eating habits, oral hygiene, and lifestyle.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will whitening damage my teeth?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Professional whitening does not damage healthy enamel when performed under the supervision of a qualified dentist.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Avoid tea, coffee, tobacco and coloured foods for 48 hours.</li>
+
+<li>✔ Brush twice daily using a soft toothbrush.</li>
+
+<li>✔ Drink plenty of water after meals.</li>
+
+<li>✔ Maintain regular professional cleaning visits.</li>
+
+<li>✔ Follow your dentist's whitening maintenance advice.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>✨ Keep Your Smile Bright</h4>
+
+<p>
+Simple habits like good oral hygiene, reducing stain-causing foods, and regular dental check-ups will help maintain your beautifully white smile for a long time.
+</p>
+
+</div>`,
+
+"Smile Designing":`
+
+<h3>✨ What is Smile Designing?</h3>
+
+<p>
+Smile Designing is an advanced cosmetic dental treatment that enhances the appearance of your smile by improving the shape, size, color, alignment, and symmetry of your teeth. Every smile makeover is carefully customized to complement your facial features, personality, and expectations.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we combine modern cosmetic dentistry with digital smile planning to create beautiful, natural-looking smiles that boost both confidence and oral health.
+</p>
+
+<h3>⚠️ Who Can Benefit from Smile Designing?</h3>
+
+<ul>
+
+<li>✔ Stained or discolored teeth</li>
+
+<li>✔ Chipped or broken teeth</li>
+
+<li>✔ Gaps between teeth</li>
+
+<li>✔ Crooked or uneven teeth</li>
+
+<li>✔ Worn-down teeth</li>
+
+<li>✔ Uneven smile line</li>
+
+<li>✔ Anyone wanting a confident smile makeover</li>
+
+</ul>
+
+<h3>⭐ Benefits of Smile Designing</h3>
+
+<div class="popup-benefit">
+✔ Creates a beautiful natural smile
+</div>
+
+<div class="popup-benefit">
+✔ Improves facial appearance
+</div>
+
+<div class="popup-benefit">
+✔ Boosts confidence
+</div>
+
+<div class="popup-benefit">
+✔ Enhances tooth symmetry
+</div>
+
+<div class="popup-benefit">
+✔ Improves smile aesthetics
+</div>
+
+<div class="popup-benefit">
+✔ Customized treatment plan
+</div>
+
+<div class="popup-benefit">
+✔ Long-lasting cosmetic results
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Smile Consultation</h4>
+
+<p>
+Your smile, facial profile, bite, and expectations are carefully evaluated to design your ideal treatment plan.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Digital Smile Planning</h4>
+
+<p>
+Photographs, digital analysis, and clinical examination help visualize your future smile before treatment begins.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Customized Treatment</h4>
+
+<p>
+Depending on your needs, treatment may include whitening, veneers, crowns, aligners, gum reshaping, or other cosmetic procedures.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Smile Enhancement</h4>
+
+<p>
+Each procedure is completed with precision to achieve natural proportions and perfect smile harmony.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Final Smile Review</h4>
+
+<p>
+Your completed smile is evaluated for comfort, function, and aesthetics to ensure long-lasting satisfaction.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Personalized Smile Design</li>
+
+<li>✔ Advanced Cosmetic Dentistry</li>
+
+<li>✔ Natural Looking Results</li>
+
+<li>✔ Modern Digital Planning</li>
+
+<li>✔ Gentle & Comfortable Care</li>
+
+<li>✔ Premium Materials</li>
+
+<li>✔ Experienced Cosmetic Dentist</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is Smile Designing only for celebrities?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Not at all. Smile Designing is suitable for anyone who wishes to improve the appearance and confidence of their smile.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long does Smile Designing take?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Treatment duration depends on the procedures involved. Some smile makeovers are completed within a few visits, while comprehensive cases may take longer.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will my new smile look natural?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Every smile is individually designed to match your face, lips, and natural tooth proportions for beautiful yet realistic results.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Maintain excellent oral hygiene.</li>
+
+<li>✔ Visit for regular dental check-ups.</li>
+
+<li>✔ Avoid habits like nail biting or chewing ice.</li>
+
+<li>✔ Wear a night guard if advised.</li>
+
+<li>✔ Follow your dentist's personalized care instructions.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>✨ Your Smile Is Your Signature</h4>
+
+<p>
+A beautiful smile can transform your confidence, improve first impressions, and positively impact both your personal and professional life.
+</p>
+
+</div>`,
+
+"Dental Crown and Bridges":`
+
+<h3>👑 What are Dental Crowns & Bridges?</h3>
+
+<p>
+Dental Crowns and Bridges are fixed restorative treatments designed to repair damaged teeth and replace missing teeth. A dental crown completely covers a weak or broken tooth, restoring its strength, shape, and appearance, while a dental bridge fills the gap created by one or more missing teeth using neighbouring teeth for support.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we design natural-looking ceramic crowns and bridges that blend beautifully with your smile while restoring comfortable chewing and long-term durability.
+</p>
+
+<h3>⚠️ When Do You Need a Crown or Bridge?</h3>
+
+<ul>
+
+<li>✔ Broken or cracked tooth</li>
+
+<li>✔ Tooth weakened after Root Canal Treatment</li>
+
+<li>✔ Large filling with insufficient tooth structure</li>
+
+<li>✔ One or more missing teeth</li>
+
+<li>✔ Severely worn-down teeth</li>
+
+<li>✔ Improve appearance of damaged teeth</li>
+
+<li>✔ Restore proper chewing function</li>
+
+</ul>
+
+<h3>⭐ Benefits of Crowns & Bridges</h3>
+
+<div class="popup-benefit">
+✔ Restores tooth strength
+</div>
+
+<div class="popup-benefit">
+✔ Natural-looking smile
+</div>
+
+<div class="popup-benefit">
+✔ Comfortable chewing
+</div>
+
+<div class="popup-benefit">
+✔ Prevents teeth from shifting
+</div>
+
+<div class="popup-benefit">
+✔ Long-lasting durability
+</div>
+
+<div class="popup-benefit">
+✔ Protects weak teeth
+</div>
+
+<div class="popup-benefit">
+✔ Improves confidence while smiling
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Consultation & Examination</h4>
+
+<p>
+Your dentist evaluates your teeth, bite, and oral health to determine whether a crown or bridge is the most suitable treatment.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Tooth Preparation</h4>
+
+<p>
+The affected tooth or supporting teeth are gently shaped to create the perfect fit for the restoration.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Digital Measurements</h4>
+
+<p>
+Precise impressions are taken to fabricate a custom-made crown or bridge that fits comfortably and naturally.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Temporary Restoration</h4>
+
+<p>
+A temporary crown or bridge is placed while your permanent restoration is being custom fabricated.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Final Placement</h4>
+
+<p>
+Your custom ceramic crown or bridge is securely cemented, carefully adjusted, and polished for excellent comfort and aesthetics.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Premium Ceramic Crowns</li>
+
+<li>✔ Natural Shade Matching</li>
+
+<li>✔ Precise Fit & Bite Adjustment</li>
+
+<li>✔ Comfortable Treatment</li>
+
+<li>✔ Digital Diagnosis</li>
+
+<li>✔ Advanced Dental Materials</li>
+
+<li>✔ Personalized Smile Restoration</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long do crowns and bridges last?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+With proper oral hygiene and regular dental check-ups, crowns and bridges can last for many years.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will my crown look like a natural tooth?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Modern ceramic crowns are carefully matched to the colour and shape of your natural teeth for a seamless appearance.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is the procedure painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Local anesthesia is used whenever required, making the treatment comfortable and virtually painless.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Avoid very hard foods for the first 24 hours.</li>
+
+<li>✔ Brush and floss daily around the crown or bridge.</li>
+
+<li>✔ Avoid using teeth to open packages.</li>
+
+<li>✔ Visit your dentist regularly for professional check-ups.</li>
+
+<li>✔ Contact us if you notice looseness or discomfort.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>👑 Protect Your Smile for Years</h4>
+
+<p>
+A well-made crown or bridge can restore both function and beauty for many years. Good oral hygiene and regular dental visits are the key to keeping your restoration strong and your smile healthy.
+</p>
+
+</div>`,
+
+"Pediatric Dentistry":`
+
+<h3>👶 What is Pediatric Dentistry?</h3>
+
+<p>
+Pediatric Dentistry focuses on the oral health of infants, children, and teenagers. From the very first tooth to the teenage years, regular dental care helps prevent cavities, supports healthy jaw development, and builds lifelong oral hygiene habits.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we create a friendly, relaxed, and child-focused environment where every young patient feels comfortable, safe, and confident during their dental visit.
+</p>
+
+<h3>⚠️ When Should Your Child Visit the Dentist?</h3>
+
+<ul>
+
+<li>✔ First tooth eruption</li>
+
+<li>Teething issues</li>
+
+<li>✔ Tooth pain or sensitivity</li>
+
+<li>✔ Cavities or visible holes</li>
+
+<li>✔ Crooked or crowded teeth</li>
+
+<li>✔ Thumb sucking or oral habits</li>
+
+<li>✔ Regular preventive dental check-ups</li>
+
+</ul>
+
+<h3>⭐ Benefits of Pediatric Dentistry</h3>
+
+<div class="popup-benefit">
+✔ Early cavity prevention
+</div>
+
+<div class="popup-benefit">
+✔ Healthy tooth development
+</div>
+
+<div class="popup-benefit">
+✔ Positive dental experiences
+</div>
+
+<div class="popup-benefit">
+✔ Prevents future dental problems
+</div>
+
+<div class="popup-benefit">
+✔ Builds healthy oral hygiene habits
+</div>
+
+<div class="popup-benefit">
+✔ Monitors jaw and tooth growth
+</div>
+
+<div class="popup-benefit">
+✔ Comfortable child-friendly care
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Friendly Consultation</h4>
+
+<p>
+We welcome your child in a calm environment and gently introduce them to the dental clinic.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Dental Examination</h4>
+
+<p>
+The dentist carefully checks your child's teeth, gums, bite, and oral development.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Preventive Care</h4>
+
+<p>
+Professional cleaning, fluoride treatment, and preventive advice help reduce the risk of cavities.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Treatment (If Needed)</h4>
+
+<p>
+If cavities or other issues are found, gentle child-friendly treatment is performed using modern techniques.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Parent Guidance</h4>
+
+<p>
+Parents receive personalized advice regarding brushing, diet, oral habits, and future dental care.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Child-Friendly Environment</li>
+
+<li>✔ Gentle & Caring Approach</li>
+
+<li>✔ Preventive Dental Care</li>
+
+<li>✔ Comfortable Treatment Experience</li>
+
+<li>✔ Modern Dental Technology</li>
+
+<li>✔ Experienced Family Dental Care</li>
+
+<li>✔ Personalized Parent Guidance</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+When should my child first visit the dentist?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+The first dental visit is recommended by your child's first birthday or within six months after the first tooth appears.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Are milk teeth important?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Baby teeth help with chewing, speech development, and guiding permanent teeth into their correct position.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How often should children have dental check-ups?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Most children should visit the dentist every six months for routine examinations and preventive care.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Brush twice daily using fluoride toothpaste.</li>
+
+<li>✔ Limit sugary snacks and drinks.</li>
+
+<li>✔ Encourage healthy eating habits.</li>
+
+<li>✔ Replace toothbrush every 3 months.</li>
+
+<li>✔ Schedule regular six-month dental check-ups.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>🌟 Healthy Smiles Start Early</h4>
+
+<p>
+Positive dental experiences during childhood help build confidence, reduce dental anxiety, and encourage lifelong oral health.
+</p>
+
+</div>`,
+
+"Tooth Extraction":`
+
+<h3>🦷 What is Tooth Extraction?</h3>
+
+<p>
+Tooth Extraction is a dental procedure performed to remove a tooth that cannot be saved due to severe decay, advanced gum disease, fracture, infection, or overcrowding. Whenever possible, we always aim to preserve your natural tooth, but extraction becomes the best option when keeping the tooth may affect your overall oral health.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, every extraction is performed using modern, minimally invasive techniques with local anesthesia to ensure a comfortable, safe, and virtually painless experience.
+</p>
+
+<h3>⚠️ When is Tooth Extraction Needed?</h3>
+
+<ul>
+
+<li>✔ Severely damaged or broken tooth</li>
+
+<li>✔ Extensive tooth decay beyond repair</li>
+
+<li>✔ Advanced gum disease causing loose teeth</li>
+
+<li>✔ Impacted or infected tooth</li>
+
+<li>✔ Orthodontic treatment requiring space</li>
+
+<li>✔ Tooth fracture below the gum line</li>
+
+<li>✔ Persistent dental infection</li>
+
+</ul>
+
+<h3>⭐ Benefits of Tooth Extraction</h3>
+
+<div class="popup-benefit">
+✔ Eliminates pain and infection
+</div>
+
+<div class="popup-benefit">
+✔ Prevents infection from spreading
+</div>
+
+<div class="popup-benefit">
+✔ Protects neighbouring teeth
+</div>
+
+<div class="popup-benefit">
+✔ Improves overall oral health
+</div>
+
+<div class="popup-benefit">
+✔ Creates space for orthodontic treatment
+</div>
+
+<div class="popup-benefit">
+✔ Promotes faster healing
+</div>
+
+<div class="popup-benefit">
+✔ Allows proper replacement planning
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Clinical Examination</h4>
+
+<p>
+Your dentist carefully examines the affected tooth and takes a digital X-ray to determine the safest treatment approach.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Comfortable Local Anesthesia</h4>
+
+<p>
+The treatment area is completely numbed to ensure a painless and comfortable extraction.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Gentle Tooth Removal</h4>
+
+<p>
+Using specialized instruments, the tooth is removed with minimal trauma to surrounding bone and gum tissues.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Cleaning the Socket</h4>
+
+<p>
+The extraction site is cleaned thoroughly to remove infected tissue and encourage proper healing.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Recovery Instructions</h4>
+
+<p>
+You'll receive medications and detailed after-care instructions to support quick healing and minimize discomfort.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Gentle Extraction Techniques</li>
+
+<li>✔ Comfortable & Painless Care</li>
+
+<li>✔ Digital X-Ray Evaluation</li>
+
+<li>✔ Strict Sterilization Protocols</li>
+
+<li>✔ Experienced Dental Team</li>
+
+<li>✔ Personalized Recovery Guidance</li>
+
+<li>✔ Complete Tooth Replacement Solutions</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is tooth extraction painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Local anesthesia keeps the procedure comfortable. Mild soreness afterward is normal and is usually well controlled with prescribed medication.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long does healing take?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Initial healing generally occurs within one to two weeks, while complete bone healing takes a little longer depending on the individual.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Can the extracted tooth be replaced?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Yes. Dental Implants, Bridges, or Dentures are excellent options for replacing missing teeth and restoring your smile.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Bite gently on the gauze for the recommended time.</li>
+
+<li>✔ Avoid smoking, alcohol, and drinking through a straw.</li>
+
+<li>✔ Eat soft foods for the first 24-48 hours.</li>
+
+<li>✔ Do not rinse vigorously during the first day.</li>
+
+<li>✔ After 24 hours,rinse gently with lukewarm salt water 3-4 times a day for 4-5 days</li>
+
+<li>✔ Take prescribed medications as directed.</li>
+
+<li>✔ Maintain gentle oral hygiene while avoiding the extraction site.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>💙 A Smooth Recovery Starts at Home</h4>
+
+<p>
+Following your after-care instructions carefully helps reduce swelling, prevents dry socket, and promotes faster, more comfortable healing after tooth extraction.
+</p>
+
+</div>`,
+
+"Full Mouth Reconstruction":`
+
+<h3>🦷 What is Full Mouth Reconstruction?</h3>
+
+<p>
+Full Mouth Reconstruction is a comprehensive dental treatment that restores the health, function, appearance, and strength of your entire mouth. It combines multiple restorative and cosmetic procedures to rebuild damaged, worn, broken, or missing teeth while improving your bite and overall oral health.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, every reconstruction plan is fully customized after a detailed examination, ensuring long-lasting results that restore both confidence and quality of life.
+</p>
+
+<h3>⚠️ Who May Need Full Mouth Reconstruction?</h3>
+
+<ul>
+
+<li>✔ Multiple missing teeth</li>
+
+<li>✔ Severely worn or broken teeth</li>
+
+<li>✔ Extensive tooth decay</li>
+
+<li>✔ Difficulty chewing food</li>
+
+<li>✔ Bite problems or jaw discomfort</li>
+
+<li>✔ Old failing dental work</li>
+
+<li>✔ Complete smile restoration</li>
+
+</ul>
+
+<h3>⭐ Benefits of Full Mouth Reconstruction</h3>
+
+<div class="popup-benefit">
+✔ Restores complete oral function
+</div>
+
+<div class="popup-benefit">
+✔ Improves chewing efficiency
+</div>
+
+<div class="popup-benefit">
+✔ Rebuilds damaged teeth
+</div>
+
+<div class="popup-benefit">
+✔ Creates a beautiful natural smile
+</div>
+
+<div class="popup-benefit">
+✔ Improves bite alignment
+</div>
+
+<div class="popup-benefit">
+✔ Boosts confidence and comfort
+</div>
+
+<div class="popup-benefit">
+✔ Long-lasting comprehensive solution
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Complete Oral Examination</h4>
+
+<p>
+A detailed clinical examination, digital X-rays, and bite analysis are performed to evaluate your overall oral health.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Personalized Treatment Planning</h4>
+
+<p>
+A customized treatment plan is prepared, combining procedures such as crowns, bridges, implants, root canals, veneers, dentures, or aligners based on your individual needs.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Restorative Treatment</h4>
+
+<p>
+Damaged or missing teeth are restored step by step using advanced techniques and high-quality dental materials.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Bite & Smile Optimization</h4>
+
+<p>
+Your bite, chewing function, appearance, and overall smile are carefully refined for maximum comfort and aesthetics.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Final Review & Maintenance</h4>
+
+<p>
+Regular follow-up visits help maintain your reconstructed smile and ensure long-term oral health.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Comprehensive Smile Rehabilitation</li>
+
+<li>✔ Advanced Digital Diagnosis</li>
+
+<li>✔ Personalized Treatment Planning</li>
+
+<li>✔ Premium Quality Materials</li>
+
+<li>✔ Comfortable & Gentle Care</li>
+
+<li>✔ Experienced Restorative Dentistry</li>
+
+<li>✔ Long-Term Follow-up Support</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long does Full Mouth Reconstruction take?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+The duration depends on the complexity of your case. Some treatments are completed within a few weeks, while extensive reconstructions may require several months.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will the treatment be painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Modern anesthesia and advanced techniques ensure that treatment remains comfortable throughout every stage.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is Full Mouth Reconstruction permanent?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+With proper oral hygiene, regular dental check-ups, and good maintenance, the results can last for many years.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Brush and floss daily.</li>
+
+<li>✔ Attend regular dental check-ups.</li>
+
+<li>✔ Avoid chewing extremely hard objects.</li>
+
+<li>✔ Follow your personalized maintenance plan.</li>
+
+<li>✔ Maintain excellent oral hygiene for long-lasting results.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>🌟 A New Smile. A New Beginning.</h4>
+
+<p>
+Full Mouth Reconstruction doesn't just rebuild teeth—it restores comfort, confidence, proper function, and the ability to smile, speak, and eat with complete confidence.
+</p>
+
+</div>`,
+
+"Wisdom Tooth Removal":`
+
+<h3>🦷 What is Wisdom Tooth Removal?</h3>
+
+<p>
+Wisdom Tooth Removal is a minor oral surgical procedure performed to remove one or more third molars that are impacted, infected, painful, or unable to erupt properly. Removing problematic wisdom teeth helps prevent pain, infection, swelling, damage to neighbouring teeth, and future dental complications.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we perform both simple and surgical wisdom tooth extractions using advanced techniques, ensuring maximum comfort and faster recovery.
+</p>
+
+<h3>⚠️ Signs You May Need Wisdom Tooth Removal</h3>
+
+<ul>
+
+<li>✔ Pain at the back of the mouth</li>
+
+<li>✔ Swollen or infected gums</li>
+
+<li>✔ Difficulty opening the mouth</li>
+
+<li>✔ Food getting trapped around the wisdom tooth</li>
+
+<li>✔ Bad breath due to infection</li>
+
+<li>✔ Damage to neighbouring teeth</li>
+
+<li>✔ Impacted or partially erupted wisdom tooth</li>
+
+</ul>
+
+<h3>⭐ Benefits of Wisdom Tooth Removal</h3>
+
+<div class="popup-benefit">
+✔ Relieves pain and swelling
+</div>
+
+<div class="popup-benefit">
+✔ Prevents future infections
+</div>
+
+<div class="popup-benefit">
+✔ Protects neighbouring teeth
+</div>
+
+<div class="popup-benefit">
+✔ Improves oral hygiene
+</div>
+
+<div class="popup-benefit">
+✔ Prevents cyst formation
+</div>
+
+<div class="popup-benefit">
+✔ Comfortable chewing
+</div>
+
+<div class="popup-benefit">
+✔ Long-term oral health
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Consultation & Digital X-Ray</h4>
+
+<p>
+Your wisdom tooth is examined using digital X-rays to determine its position and whether a simple or surgical extraction is required.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Comfortable Local Anesthesia</h4>
+
+<p>
+The area is completely numbed to ensure a painless and stress-free procedure.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Gentle Tooth Removal</h4>
+
+<p>
+The wisdom tooth is carefully removed using minimally invasive techniques to reduce trauma and promote faster healing.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Cleaning the Area</h4>
+
+<p>
+The extraction site is cleaned thoroughly and stitches are placed whenever required for optimal healing.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Recovery Instructions</h4>
+
+<p>
+Detailed after-care guidance and medications are provided to ensure a smooth and comfortable recovery.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Gentle Surgical Techniques</li>
+
+<li>✔ Advanced Digital X-Ray</li>
+
+<li>✔ Comfortable & Painless Care</li>
+
+<li>✔ Experienced Dental Team</li>
+
+<li>✔ Strict Sterilization Standards</li>
+
+<li>✔ Personalized Recovery Guidance</li>
+
+<li>✔ Emergency Dental Care Available</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is wisdom tooth removal painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+No. Local anesthesia ensures the procedure is painless. Mild discomfort after the extraction is normal and can be managed with prescribed medication.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How long does recovery take?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Most patients recover comfortably within a few days, while complete healing of the area takes a few weeks.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Will stitches be required?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Some surgical extractions require stitches, while simple extractions may not. Your dentist will explain the procedure before treatment.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Bite gently on the gauze as instructed.</li>
+
+<li>✔ Avoid smoking and alcohol during healing.</li>
+
+<li>✔ Eat soft foods for the first 24–48 hours.</li>
+
+<li>✔ Do not rinse forcefully on the first day.</li>
+
+<li>✔ Take all prescribed medications on time.</li>
+
+<li>✔ Maintain gentle oral hygiene around the area.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>💙 Faster Healing Starts with Proper Care</h4>
+
+<p>
+Following your post-extraction instructions carefully helps reduce swelling, prevents complications, and allows your mouth to heal comfortably and quickly.
+</p>
+
+</div>`,
+
+"Gums Treatment":`
+
+<h3>🩷 What is Gums Treatment?</h3>
+
+<p>
+Healthy gums are the foundation of a healthy smile. Gums Treatment focuses on preventing, treating, and managing gum diseases such as gingivitis and periodontitis, helping preserve your natural teeth and supporting overall oral health.
+</p>
+
+<p>
+At <strong>Dr. Amrita's Dentacare</strong>, we use advanced diagnostic techniques and modern periodontal treatments to restore healthy gums while providing comfortable, personalized care for every patient.
+</p>
+
+<h3>⚠️ Signs You May Need Gums Treatment</h3>
+
+<ul>
+
+<li>✔ Bleeding gums while brushing</li>
+
+<li>✔ Swollen or red gums</li>
+
+<li>✔ Persistent bad breath</li>
+
+<li>✔ Gum recession</li>
+
+<li>✔ Loose teeth</li>
+
+<li>✔ Pain while chewing</li>
+
+<li>✔ Pus around the gums</li>
+
+</ul>
+
+<h3>⭐ Benefits of Gums Treatment</h3>
+
+<div class="popup-benefit">
+✔ Stops gum infection
+</div>
+
+<div class="popup-benefit">
+✔ Reduces bleeding and swelling
+</div>
+
+<div class="popup-benefit">
+✔ Prevents tooth loss
+</div>
+
+<div class="popup-benefit">
+✔ Improves breath freshness
+</div>
+
+<div class="popup-benefit">
+✔ Restores healthy gums
+</div>
+
+<div class="popup-benefit">
+✔ Protects supporting bone
+</div>
+
+<div class="popup-benefit">
+✔ Improves overall oral health
+</div>
+
+<h3>🔬 Treatment Process</h3>
+
+<div class="popup-step">
+
+<div class="popup-number">1</div>
+
+<div>
+
+<h4>Comprehensive Examination</h4>
+
+<p>
+Your gums are carefully examined to assess inflammation, pocket depth, and signs of infection.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">2</div>
+
+<div>
+
+<h4>Professional Deep Cleaning</h4>
+
+<p>
+Plaque, tartar, and bacteria are removed from above and below the gum line through scaling and root planing.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">3</div>
+
+<div>
+
+<h4>Infection Control</h4>
+
+<p>
+If required, medicated treatment is provided to eliminate harmful bacteria. Advanced or deep infections may require laser gum treatment or specialized gum surgeries to thoroughly clear disease and restore tissue health.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">4</div>
+
+<div>
+
+<h4>Gum Healing</h4>
+
+<p>
+Your gums begin to tighten around the teeth as inflammation reduces and healing progresses.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-step">
+
+<div class="popup-number">5</div>
+
+<div>
+
+<h4>Maintenance Program</h4>
+
+<p>
+Regular follow-up visits help maintain healthy gums and prevent future gum disease.
+</p>
+
+</div>
+
+</div>
+
+<h3>❤️ Why Choose Dr. Amrita's Dentacare?</h3>
+
+<ul>
+
+<li>✔ Gentle Periodontal Care</li>
+
+<li>✔ Advanced Ultrasonic Cleaning</li>
+
+<li>✔ Personalized Treatment Plans</li>
+
+<li>✔ Experienced Dental Team</li>
+
+<li>✔ Comfortable & Painless Procedures</li>
+
+<li>✔ Modern Sterilization Standards</li>
+
+<li>✔ Long-Term Gum Health Focus</li>
+
+</ul>
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<div class="popup-accordion">
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Can bleeding gums heal on their own?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Occasional bleeding may improve with better oral hygiene, but persistent bleeding usually indicates gum disease and should be evaluated by a dentist.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+Is gum treatment painful?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Most gum treatments are comfortable. Local anesthesia is used whenever necessary to ensure a pain-free experience.
+</p>
+
+</div>
+
+</div>
+
+<div class="popup-accordion-item">
+
+<div class="popup-accordion-question">
+How can I prevent gum disease?
+<span>+</span>
+</div>
+
+<div class="popup-accordion-answer">
+<p>
+Brush twice daily, floss regularly, avoid tobacco, and visit your dentist every six months for professional cleaning and examination.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>🪥 After Care</h3>
+
+<ul>
+
+<li>✔ Brush gently using a soft-bristled toothbrush.</li>
+
+<li>✔ Floss daily as advised.</li>
+
+<li>✔ Avoid smoking and tobacco products.</li>
+
+<li>✔ Use prescribed mouthwash if recommended.</li>
+
+<li>✔ Attend regular maintenance appointments.</li>
+
+</ul>
+
+<div class="popup-tip">
+
+<h4>🌿 Healthy Gums Mean Healthy Teeth</h4>
+
+<p>
+Treating gum disease early helps preserve your natural teeth, improves your smile, and supports your long-term oral health.
+</p>
+
+</div>`,
+
+};
+
+const serviceImages = {
+
+"Root Canal Treatment":"images/Rootcanal.jpg",
+"Tooth Fillings":"images/filling.jpeg",
+"Dentures":"images/denture.jpeg",
+"Dental Implants":"images/implant.jpeg",
+"Teeth Braces":"images/braces.jpeg",
+"Clear Aligners":"images/aligners.jpeg",
+"Teeth Cleaning":"images/cleaning.jpeg",
+"Teeth Whitening":"images/whitening.jpeg",
+"Smile Designing":"images/smile-design.jpeg",
+"Dental Crown and Bridges":"images/Dental Crown and Bridges.jpeg",
+"Pediatric Dentistry":"images/Pediatric Dentistry.jpeg",
+"Tooth Extraction":"images/extraction.jpeg",
+"Full Mouth Reconstruction":"images/Full mouth reconstruction.jpeg",
+"Wisdom Tooth Removal":"images/wisdom.jpeg",
+"Gums Treatment":"images/gums.jpeg"
+
+};
+
+image.src = serviceImages[service];
+
+title.innerText = service;
+desc.innerHTML = serviceDetails[service];
+
+popup.style.display = "flex";
+popup.style.pointerEvents = "auto";
+document.body.style.overflow = "hidden";
+document.querySelector(".popup-content").scrollTop = 0;
+
+setTimeout(()=>{
+
+document.querySelector(".popup-content").style.transform="scale(1)";
+document.querySelector(".popup-content").style.opacity="1";
+
+},10);
+}
+
+
+document.addEventListener("click", function(e){
+
+const question = e.target.closest(".popup-accordion-question");
+
+if(!question) return;
+
+const answer = question.nextElementSibling;
+const icon = question.querySelector("span");
+
+document.querySelectorAll(".popup-accordion-answer").forEach(item=>{
+
+if(item !== answer){
+item.style.maxHeight = null;
+}
+
+});
+
+document.querySelectorAll(".popup-accordion-question span").forEach(item=>{
+
+if(item !== icon){
+item.textContent = "+";
+}
+
+});
+
+if(answer.style.maxHeight){
+
+answer.style.maxHeight = null;
+icon.textContent = "+";
+
+}else{
+
+answer.style.maxHeight = answer.scrollHeight + "px";
+icon.textContent = "−";
+
+}
+
+});
+
+function closeServicePopup(){
+
+const popup = document.getElementById("servicePopup");
+const content = document.querySelector(".popup-content");
+
+content.style.transform = "scale(.92)";
+content.style.opacity = "0";
+
+setTimeout(function(){
+
+popup.style.display = "none";
+document.body.style.overflow = "";
+popup.style.pointerEvents = "none";
+
+},250);
+
+}
+window.onclick = function(event){
+
+const popup = document.getElementById("servicePopup");
+
+if(event.target === popup){
+closeServicePopup();
+}
+
+}
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+
+        closeServicePopup();
+
+    }
+
+});
+</script>
+
+<script>
+const fadeElements = document.querySelectorAll('.fade-up');
+
+fadeElements.forEach(function(element){
+element.classList.add('animate');
+});
+
+const fadeObserver = new IntersectionObserver(function(entries){
+entries.forEach(function(entry){
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{
+threshold:0.15
+});
+
+fadeElements.forEach(function(element){
+fadeObserver.observe(element);
+});
+</script>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav a');
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+menuToggle.addEventListener('click', function(){
+nav.classList.toggle('active');
+});
+
+navLinks.forEach(function(link){
+link.addEventListener('click', function(){
+nav.classList.remove('active');
+});
+});
+
+window.addEventListener('scroll', function(){
+if(window.scrollY > 400){
+scrollTopBtn.style.display = 'block';
+}else{
+scrollTopBtn.style.display = 'none';
+}
+});
+
+scrollTopBtn.addEventListener('click', function(){
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+document.getElementById("loader").style.opacity="0";
+
+setTimeout(()=>{
+document.getElementById("loader").style.display="none";
+},300);
+});
+</script>
+
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<script>
+const today = new Date().toISOString().split("T")[0];
+document.getElementById("patientDate").setAttribute("min", today);
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+<script>
+const phoneInput = document.querySelector("#patientPhone");
+
+window.intlTelInput(phoneInput,{
+initialCountry:"in",
+separateDialCode:true,
+preferredCountries:["in","us","gb","ae","ca","au"],
+utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+
+const cards=document.querySelectorAll(".testimonial-card");
+const prev=document.querySelector(".prev");
+const next=document.querySelector(".next");
+const mute=document.querySelector(".mute-floating");
+const wrapper = document.querySelector(".testimonial-wrapper");
+
+let current = 1;
+
+function update(){
+
+
+cards.forEach(card=>{
+
+card.classList.remove("left","active","right");
+
+const v=card.querySelector("video");
+
+v.pause();
+
+v.currentTime=0;
+
+});
+
+let left=(current-1+cards.length)%cards.length;
+let right=(current+1)%cards.length;
+
+cards[left].classList.add("left");
+cards[current].classList.add("active");
+cards[right].classList.add("right");
+
+const video=cards[current].querySelector("video");
+
+video.play().catch(() => {});
+
+video.muted=true;
+
+mute.innerHTML="🔇";
+
+}
+
+next.onclick=()=>{
+
+current=(current+1)%cards.length;
+
+update();
+};
+
+prev.onclick=()=>{
+
+current=(current-1+cards.length)%cards.length;
+
+update();
+};
+
+cards.forEach((card,index)=>{
+
+card.onclick=()=>{
+
+current=index;
+
+update();
+};
+
+});
+
+cards.forEach(card=>{
+
+card.querySelector("video").addEventListener("click",(e)=>{
+
+e.stopPropagation();
+
+const active=cards[current].querySelector("video");
+
+active.muted=!active.muted;
+
+mute.innerHTML=active.muted?"🔇":"🔊";
+
+mute.classList.add("show");
+
+clearTimeout(window.hideMute);
+
+window.hideMute=setTimeout(()=>{
+
+mute.classList.remove("show");
+
+},1800);
+
+});
+
+});
+
+let startX = 0;
+
+wrapper.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+}, { passive: true });
+
+wrapper.addEventListener("touchend", (e) => {
+
+    const endX = e.changedTouches[0].clientX;
+
+    const diff = startX - endX;
+
+    if (Math.abs(diff) < 50) return;
+
+    if (diff > 0) {
+        next.click();
+    } else {
+        prev.click();
+    }
+
+});
+
+update();
+
+
+
+
+wrapper.addEventListener("mouseenter", () => {});
+
+wrapper.addEventListener("mouseleave", () => {
+
+
+});
+
+});
+</script>
+
+<script src="https://static.elfsight.com/platform/platform.js" async>
+
+</script>
+
+</body>
+</html>
