@@ -197,15 +197,22 @@ gap:10px;
 .logo-wrap{
 display:flex;
 align-items:center;
-gap:14px;
+gap:8px;
 }
 
-.logo-wrap img{
+.logo-wrap > img:first-child{
 display:block;
-width:72px;
-height:72px;
+width:112px;
+height:112px;
 object-fit:contain;
 flex-shrink:0;
+}
+
+.brand-image{
+display:block;
+width:400px;
+height:auto;
+margin-left:-15px;
 }
 
 .brand-text{
@@ -1553,10 +1560,16 @@ position:relative;
 padding:8px 6px;
 }
 
-.logo-wrap img{
-width:52px;
-height:52px;
+.logo-wrap > img:first-child{
+width:80px;
+height:80px;
 margin-left:0;
+}
+
+.brand-image{
+width:255px;
+height:auto;
+margin-left:-18px;
 }
 
 .brand-text h1{
@@ -2732,10 +2745,9 @@ overflow:hidden;
 
 <img src="images/logo.png" alt="Dr. Amrita's Dentacare">
 
-<div class="brand-text">
-<h1>Dr. Amrita's Dentacare</h1>
-<p>Crafting Beautiful Smiles</p>
-</div>
+<img src="images/brand.png"
+     alt="Dr. Amrita's Dentacare"
+     class="brand-image">
 
 </div>
 <div class="menu-toggle" id="menuToggle">
