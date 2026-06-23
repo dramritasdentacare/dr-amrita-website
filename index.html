@@ -1409,10 +1409,6 @@ font-size:18px;
 color:#555;
 }
 
-.mobile-call{
-display:none;
-}
-
 .desktop-call{
 display:inline-flex;
 align-items:center;
@@ -1435,33 +1431,11 @@ display:none;
 .menu-toggle{
 display:block;
 position:absolute;
-right:15px;
+right:18px;
 top:50%;
 transform:translateY(-50%);
-font-size:40px;
+font-size:42px;
 margin:0;
-}
-
-.mobile-call{
-display:flex;
-align-items:center;
-justify-content:center;
-
-position:absolute;
-right:58px;
-top:50%;
-transform:translateY(-50%);
-
-width:38px;
-height:38px;
-padding:0;
-
-border-radius:50%;
-
-font-size:18px;
-font-weight:700;
-
-z-index:1001;
 }
 
 nav{
@@ -1523,18 +1497,20 @@ font-size:22px;
 
 .brand-text p{
 font-family:"Brush Script MT", cursive;
-font-size:17px;
+font-size:12px;
 line-height:1;
 margin-top:2px;
-margin-left:55px;
+margin-left:0;
 text-align:left;
+white-space:nowrap;
 }
 
 .nav-wrap{
 display:flex;
+justify-content:space-between;
 align-items:center;
 position:relative;
-padding-right:110px;
+padding:8px 15px;
 }
 
 .logo-wrap img{
@@ -1542,15 +1518,19 @@ width:65px;
 }
 
 .brand-text h1{
-font-size:17px;
+font-size:15px;
 line-height:1.1;
-margin-bottom:6px;
+margin:0;
+white-space:nowrap;
 }
 
 .brand-text{
 display:flex;
 flex-direction:column;
 justify-content:center;
+flex:1;
+min-width:0;
+margin-left:0;
 }
 
 .btn{
@@ -2716,9 +2696,6 @@ overflow:hidden;
 <p>Treating Roots,Restoring Smiles</p>
 </div>
 </div>
-<a href="tel:+918850969352" class="btn btn-gold mobile-call">
-📞
-</a>
 
 <div class="menu-toggle" id="menuToggle">
 ☰
