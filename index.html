@@ -945,8 +945,14 @@ justify-content:center;
 gap:30px;
 transition:transform .45s ease;
 will-change:transform;
+position:relative;
 }
 
+.testimonial-carousel::before,
+.testimonial-carousel::after{
+content:"";
+flex:0 0 140px;
+}
 .testimonial-card{
 
 
