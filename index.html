@@ -939,10 +939,12 @@ padding:20px;
 }
 
 .testimonial-carousel{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
+transition:transform .45s ease;
+will-change:transform;
 }
 
 .testimonial-card{
@@ -8075,6 +8077,7 @@ const mute=document.querySelector(".mute-floating");
 const wrapper = document.querySelector(".testimonial-carousel");
 
 let current = 1;
+const carousel = document.querySelector(".testimonial-carousel");
 
 function update(){
 
@@ -8105,6 +8108,25 @@ cards[right].style.display="block";
 cards[left].classList.add("left");
 cards[current].classList.add("active");
 cards[right].classList.add("right");
+if(window.innerWidth <= 991){
+
+    const activeCard = cards[current];
+
+    requestAnimationFrame(() => {
+
+        const moveX =
+            activeCard.offsetLeft -
+            ((carousel.offsetWidth - activeCard.offsetWidth) / 2)- 15;
+
+        carousel.style.transform = `translateX(-${moveX}px)`;
+
+    });
+
+}else{
+
+    carousel.style.transform = "";
+
+}
 const video=cards[current].querySelector("video");
 
 video.play().catch(() => {});
