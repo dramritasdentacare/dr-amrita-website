@@ -947,7 +947,6 @@ padding:20px;
 
 .testimonial-card{
 
-display:none;
 
 position:relative;
 overflow:hidden;
@@ -8073,7 +8072,7 @@ const cards=document.querySelectorAll(".testimonial-card");
 const prev=document.querySelector(".prev");
 const next=document.querySelector(".next");
 const mute=document.querySelector(".mute-floating");
-const wrapper = document.querySelector(".testimonial-wrapper");
+const wrapper = document.querySelector(".testimonial-carousel");
 
 let current = 1;
 
@@ -8092,13 +8091,20 @@ v.currentTime=0;
 
 });
 
+cards.forEach(card=>{
+card.style.display="none";
+});
+
 let left=(current-1+cards.length)%cards.length;
 let right=(current+1)%cards.length;
+
+cards[left].style.display="block";
+cards[current].style.display="block";
+cards[right].style.display="block";
 
 cards[left].classList.add("left");
 cards[current].classList.add("active");
 cards[right].classList.add("right");
-
 const video=cards[current].querySelector("video");
 
 video.play().catch(() => {});
