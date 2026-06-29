@@ -2355,7 +2355,7 @@ pointer-events:none;
 
 .popup-content{
 position:relative;
-width:min(900px,95%);
+width:min(1000px,98%);
 max-height:90vh;
 
 border-radius:30px;
@@ -2382,8 +2382,8 @@ position:relative;
 
 #popupTitle,
 #popupDescription{
-padding:25px 45px;
-max-width:760px;
+padding:20px 20px;
+max-width:100%;
 margin:auto;
 color:#16325b;
 }
@@ -2415,7 +2415,7 @@ display:inline-block;
 #popupTitle,
 #popupDescription,
 .popup-content .btn{
-max-width:500px;
+max-width:100%;
 }
 
 .popup-close{
@@ -2485,19 +2485,16 @@ padding-bottom:40px;
 }
 
 .popup-benefit{
-
 background:#fffdf7;
 border-left:5px solid #c6a769;
-padding:18px 22px;
-margin:12px 0;
+padding:18px 20px;
+margin:14px 0;
 border-radius:16px;
 box-shadow:0 8px 20px rgba(0,0,0,.05);
 
-font-size:17px;
-color:#444;
-
-transition:.3s;
-
+width:100%;
+max-width:100%;
+display:block;
 }
 
 .popup-benefit:hover{
@@ -2892,6 +2889,85 @@ overflow:hidden;
 .footer-grid{
 max-width:100%;
 overflow:hidden;
+}
+
+/* ===== Mobile Popup Improvements ===== */
+
+@media (max-width:768px){
+
+.popup-content{
+width:97% !important;
+padding:8px !important;
+border-radius:22px;
+}
+
+#popupTitle,
+#popupDescription{
+padding:18px !important;
+max-width:100% !important;
+}
+
+#popupDescription h3{
+font-size:24px !important;
+}
+
+#popupDescription p,
+#popupDescription li{
+font-size:16px !important;
+line-height:1.9 !important;
+}
+
+.popup-benefit{
+padding:16px !important;
+margin:12px 0 !important;
+}
+
+.popup-step{
+display:flex !important;
+align-items:flex-start;
+gap:12px !important;
+padding:16px !important;
+}
+
+.popup-number{
+width:42px;
+height:42px;
+font-size:18px;
+flex-shrink:0;
+}
+
+.popup-step h4{
+font-size:18px;
+margin-bottom:6px;
+}
+
+.popup-step p{
+font-size:15px;
+line-height:1.7;
+}
+
+.popup-feature{
+display:flex !important;
+gap:12px !important;
+padding:16px !important;
+}
+
+.popup-feature h4{
+font-size:18px;
+margin-bottom:6px;
+}
+
+.popup-feature p{
+font-size:15px;
+line-height:1.7;
+}
+
+.popup-content .btn{
+width:100%;
+margin:25px 0 10px;
+text-align:center;
+}
+
 }
 
 </style>
