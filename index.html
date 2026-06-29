@@ -1881,7 +1881,7 @@ padding:28px 22px;
 
 border-radius:26px;
 
-max-width:92%;
+max-width:88%;
 margin:auto;
 }
 
@@ -2278,6 +2278,12 @@ outline:none;
 transition:0.3s;
 box-shadow:0 6px 18px rgba(22,50,91,0.04);
 }
+
+#patientDate{
+color:#666;
+font-size:16px;
+}
+
 .appointment-box input:focus,
 .appointment-box select:focus,
 .appointment-box textarea:focus{
@@ -3638,7 +3644,10 @@ I am very anxious about dental visits. Can I trust Dr. Amrita’s Dentacare to m
 </div>
 
 <div class="form-field">
-<input type="date" id="patientDate">
+<input
+type="date"
+id="patientDate"
+aria-label="Preferred Date">
 </div>
 
 <div class="form-field full-width">
