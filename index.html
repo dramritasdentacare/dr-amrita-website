@@ -2280,6 +2280,35 @@ box-shadow:0 6px 18px rgba(22,50,91,0.04);
 }
 
 #patientDate{
+height:65px;
+width:100%;
+padding:20px 22px;
+border:1px solid #dce7f2;
+border-radius:20px;
+font-size:15px;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#ffffff,#f8fafc);
+color:#666;
+outline:none;
+box-shadow:0 6px 18px rgba(22,50,91,0.04);
+transition:0.3s;
+}
+
+#patientDate:focus{
+border-color:#c6a769;
+box-shadow:0 0 0 4px rgba(198,167,105,0.15);
+}
+
+#patientDate::-webkit-calendar-picker-indicator{
+cursor:pointer;
+opacity:0.8;
+}
+
+#patientDate:invalid{
+color:#999;
+}
+
+#patientDate{
 color:#666;
 font-size:16px;
 }
@@ -3645,9 +3674,11 @@ I am very anxious about dental visits. Can I trust Dr. Amrita’s Dentacare to m
 
 <div class="form-field">
 <input
-type="date"
+type="text"
 id="patientDate"
-aria-label="Preferred Date">
+placeholder="📅 Preferred Date"
+onfocus="this.type='date'"
+onblur="if(!this.value)this.type='text'">
 </div>
 
 <div class="form-field full-width">
