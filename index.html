@@ -3032,6 +3032,27 @@ letter-spacing:2px;
 font-size:15px;
 line-height:1.8;
 color:#555;
+overflow:hidden;
+max-height:110px;
+transition:.35s;
+}
+
+.review-card p.expanded{
+max-height:1000px;
+}
+
+.read-more-review{
+display:inline-block;
+margin-top:12px;
+font-size:15px;
+font-weight:600;
+color:#c6a769;
+cursor:pointer;
+transition:.3s;
+}
+
+.read-more-review:hover{
+color:#16325b;
 }
 
 ::-webkit-scrollbar{
@@ -4086,9 +4107,13 @@ Leave a Google Review
 
 <p>
 
-I had a fantastic experience with Dr. Amrita. She is highly professional, gentle and explains every procedure in detail. The clinic is modern, clean and completely painless. Highly recommended.
+I had a very good experience at Amrita Dentacare. The treatment provided was excellent and handled with great care and professionalism. The doctor and staff are very polite, attentive, and make you feel comfortable throughout the process.I personally availed their dental services and am highly satisfied with the results. The clinic maintains proper hygiene and uses modern techniques, which adds to the overall confidence in their treatment.I would definitely recommend Amrita Dentacare to anyone looking for quality dental care. Must visit for reliable and effective dental treatment✨
 
 </p>
+
+<span class="read-more-review">
+Read More
+</span>
 
 </div>
 
@@ -4124,6 +4149,10 @@ Visited Dr. Amrita for my root canal treatment. Everything was painless, quick a
 
 </p>
 
+<span class="read-more-review">
+Read More
+</span>
+
 </div>
 
 </div>
@@ -4158,7 +4187,9 @@ I visited Dr.Amrita for my root canal treatment. The treatment was completed in 
 
 </p>
 
-</div>
+</div><span class="read-more-review">
+Read More
+</span>
 
 </div>
 
@@ -4192,7 +4223,9 @@ I visited Dr.Amrita for extracting my tooth. She has very light hand and she mad
 
 </p>
 
-</div>
+</div><span class="read-more-review">
+Read More
+</span>
 
 </div>
 
@@ -4227,7 +4260,9 @@ Wonderful dentist. Always takes the time to explain everything and make you feel
 
 </p>
 
-</div>
+</div><span class="read-more-review">
+Read More
+</span>
 
 </div>
 
@@ -4260,6 +4295,10 @@ Wonderful dentist. Always takes the time to explain everything and make you feel
 thank you for your patience, kindness, and for taking such excellent care of my dental health. I truly appreciate all that you do!"
 
 </p>
+
+<span class="read-more-review">
+Read More
+</span>
 
 </div>
 
@@ -4297,7 +4336,9 @@ Dr. Amrita and her specialised team looked after me so well and made sure my ent
 
 </p>
 
-</div>
+</div><span class="read-more-review">
+Read More
+</span>
 
 </div>
 
@@ -8827,6 +8868,41 @@ spaceBetween:30,
 }
 
 });
+
+document.querySelectorAll(".review-card").forEach(card=>{
+
+const review=card.querySelector("p");
+const button=card.querySelector(".read-more-review");
+
+if(!review || !button) return;
+
+// Hide button if review is short
+if(review.scrollHeight<=review.clientHeight+5){
+
+button.style.display="none";
+
+}else{
+
+button.addEventListener("click",function(){
+
+review.classList.toggle("expanded");
+
+if(review.classList.contains("expanded")){
+
+button.innerHTML="Read Less ↑";
+
+}else{
+
+button.innerHTML="Read More ↓";
+
+}
+
+});
+
+}
+
+});
+
 </script>
 
 </body>
